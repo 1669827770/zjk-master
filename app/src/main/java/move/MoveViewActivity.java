@@ -21,9 +21,6 @@ public class MoveViewActivity extends Activity {
 
 
     MoveImageView moveImageView;
-    MoveImageView moveImageView2;
-    MoveImageView moveImageView3;
-    MoveImageView moveImageView4;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

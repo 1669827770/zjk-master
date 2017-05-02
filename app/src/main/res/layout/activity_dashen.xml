@@ -22,6 +22,26 @@
         android:layout_height="wrap_content"
         android:text="安卓控件移动"/>
 
+    <Button
+        android:id="@+id/rounded_rectangle_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="圆角矩形的dialog"/>
+
+
+    <Button
+        android:id="@+id/middle_rounded_rectangle_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="中间的圆角矩形的dialog"/>
+
+    <Button
+        android:id="@+id/utils"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Utils"/>
+
+
 
 
 </LinearLayout>
