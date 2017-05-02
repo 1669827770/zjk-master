@@ -9,6 +9,7 @@ import dialog.AddrDialog2;
 import move.MoveImageviewActivity;
 import move.MoveViewActivity;
 import move.WeigetMoveActivity;
+import move.WelcomeActivity;
 
 
 /**
@@ -78,6 +79,16 @@ public class DaShenActivity extends Activity {
                 addrDialog2.show();
             }
         });
+
+
+        findViewById(R.id.btn_count_down).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DaShenActivity.this, WelcomeActivity.class));
+            }
+        });
+
+
 
 
 

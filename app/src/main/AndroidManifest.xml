@@ -21,6 +21,7 @@
         <activity android:name="move.MoveImageviewActivity"></activity>
         <activity android:name="move.MoveViewActivity"></activity>
         <activity android:name="move.WeigetMoveActivity"></activity>
+        <activity android:name="move.WelcomeActivity"></activity>
     </application>
 
 

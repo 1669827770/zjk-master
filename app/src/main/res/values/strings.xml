@@ -11,4 +11,689 @@
 
 
 
+<!--<string name="app_name">即时判</string>-->
+
+<!-- http -->
+<string name="http_error">网络异常</string>
+<string name="parse_data_exception">数据解析异常</string>
+<string name="http_server_exception">服务器异常</string>
+
+<!-- 自定义dialog -->
+<string name="loading">正在加载...</string>
+<string name="optioning">正在操作...</string>
+<string name="logining">正在登录...</string>
+
+<!-- 操作提示 -->
+
+<!-- 下拉刷新显示时间 -->
+<string name="time_just_now">刚刚</string>
+<string name="time_minute">%d分钟前</string>
+<string name="time_hour">%d小时前</string>
+<string name="time_day">%d天前</string>
+<string name="time_month">%d月前</string>
+<string name="time_year">%d年前</string>
+<string name="time_yesterday_hour_minute">昨天 %s</string>
+<!-- 时间 -->
+<string name="time_after_tomorrow">后天%s</string>
+<string name="time_tomorrow">明天%s</string>
+<string name="time_today">今天%s</string>
+<string name="time_yesterday">昨天%s</string>
+<string name="time_before_yesterday">前天%s</string>
+<string name="time_this_week">本周%s</string>
+<string name="time_last_week">上周%s</string>
+<string name="time_this_month">本月%s</string>
+<string name="time_last_month">上月%s</string>
+
+<string name="today">今天</string>
+<string name="yesterday">昨天</string>
+<string name="before_yesterday">前天</string>
+<!-- 图片选择 -->
+<string name="take_photo">拍照</string>
+<string name="choose_from_album">从手机相册选择</string>
+<string name="cancel">取消</string>
+
+<!-- 微信授权 -->
+<string name="wx_auth_loading">正在进行微信授权</string>
+<string name="wx_user_info_loading">正在获取用户信息</string>
+<string name="wx_req_canceled">微信请求被取消</string>
+<string name="wx_req_denied">微信请求被拒绝</string>
+<string name="wx_req_failed">微信请求失败</string>
+
+<!-- 登录 -->
+<string name="tv_verify_code">请输入验证码</string>
+<string name="hint_phone_empty">请输入您的手机号码</string>
+<string name="hint_phone_illegal">手机号格式不正确</string>
+<string name="hint_captcha_empty">请输入验证码</string>
+<string name="toast_input_protocol">请先遵守协议</string>
+<string name="toast_input_phone">请输入手机号</string>
+
+<!-- 注册 -->
+<string name="hint_password_empty">请输入密码</string>
+<string name="get_verify_code">重新发送</string>
+<string name="get_validate_code">发送验证码</string>
+<string name="validate_code">验证码</string>
+<string name="native_num">+86</string>
+<string name="time_remain">%d秒</string>
+<string name="title_bind_phone">绑定手机</string>
+<string name="tv_password_not_null">密码不能为空</string>
+
+<!-- 绑定OBD -->
+<string name="license_plate">车牌号</string>
+<string name="next">下一步</string>
+<string name="hint_license_plate_empty">请输入车牌号码</string>
+<string name="default_province">京</string>
+<string name="title_choose_license_plate">选择车牌号</string>
+<string name="add_car_error">添加车失败</string>
+<string name="finish">完成</string>
+
+<!-- 车辆选择 -->
+<string name="car_brand">品牌</string>
+<string name="car_series">车系</string>
+<string name="car_year">年款</string>
+<string name="car_type">车型</string>
+<string name="hint_default_choose">未选择</string>
+<string name="plate_num">车牌号</string>
+<string name="vehicle_num">车架号</string>
+<string name="engine_num">发动机号</string>
+<string name="car_detail">车辆详情</string>
+<string name="car_auth">车辆认证</string>
+<string name="car_license_plate_is_no">车牌号为空</string>
+<string name="car_license_plate_is_null">车牌号为空，请填写</string>
+<string name="car_framenumber_is_null">车架号为空，请填写</string>
+<string name="car_engineno_is_null">发动机为空，请填写</string>
+<string name="info_error_please_validate">，请核对</string>
+
+<!-- 设置 -->
+<string name="title_me">我的</string>
+<string name="title_me_info">我的信息</string>
+<string name="vehicle_info">车型参数</string>
+<string name="setting">设置</string>
+<string name="no_trouble_setting">免打扰设置</string>
+<string name="no_trouble_start_time">22:00</string>
+<string name="no_trouble_end_time">08:00</string>
+<string name="message_inform">消息通知</string>
+<string name="secure_inform">安防设置</string>
+<string name="mobile_record_location_title">手机记录轨迹</string>
+<string name="driver_inform">行车设置</string>
+<string name="clear_cache">清除缓存</string>
+<string name="common_problem">常见问题</string>
+<string name="rl_user_manual">用户手册</string>
+<string name="about_obd">关于即时判</string>
+<string name="tip_on">开启</string>
+<string name="tip_off">关闭</string>
+<string name="logout_tips">确定注销？</string>
+<string name="delete_tips">确定删除？</string>
+<string name="exit_camera_tips">退出将重新拍照，是否继续？</string>
+
+<!-- 车主信息 -->
+<string name="user_name">姓名</string>
+<string name="save">保存</string>
+<string name="car_name_title">车辆信息</string>
+<string name="add_my_car">添加我的车</string>
+
+<!-- 主页 -->
+<string name="tab_car">座驾</string>
+<string name="exit_toast">再按一次退出</string>
+<string name="confirm">确定</string>
+
+<!-- 生涯 -->
+<string name="nickname">昵称</string>
+
+<!-- 足迹 -->
+<string name="title_mileage">里程</string>
+<string name="title_time_cost">耗时</string>
+<string name="title_fuel_cost">耗油</string>
+<string name="title_max_speed">最高时速</string>
+<string name="format_time_range">%1$s~%2$s</string>
+<string name="km">km</string>
+<string name="min">min</string>
+<string name="fuel">l</string>
+<string name="speed">km/h</string>
+
+<!-- 车辆详情 -->
+<string name="vehicle_submit_auth">提交审核</string>
+<string name="vehicle_quick_auth">立即认证</string>
+<string name="vehicle_re_submit_auth">重新提交</string>
+<string name="vehicle_intput_licenseplate">请完善车牌号信息</string>
+<string name="vehicle_intput_ftamenumber">请完善车架号信息</string>
+<string name="vehicle_intput_registration">请完善发动机号信息</string>
+<string name="vehicle_is_update_dialog_tip">修改数据将需要重新认证车辆。\n是否继续？</string>
+<string name="vehicle_upload_license_plate">请上传驾驶证图片</string>
+<string name="vehicle_upload_xingshizheng">请上传行驶证图片</string>
+<string name="vehicle_auth_no_success">认证失败</string>
+
+<!-- 车辆状态 -->
+<string name="locate_failed">未获得车辆位置</string>
+
+<!--盒子状态-->
+<string name="obd_status_offline">离线</string>
+<string name="obd_status_success">正常</string>
+<string name="obd_status_faild">休眠</string>
+<string name="obd_status_exception">盒子状态异常</string>
+<string name="obd_exception_influence">设备异常的影响</string>
+<string name="obd_problem_exception_step">问题自查步骤</string>
+<string name="obd_exception_influence_detail">
+        1.安防失效，无法警告、无法显示车辆最新位置；\n
+        2.车辆检测失效，无法对车辆故障进行检测和预警；\n
+        3.驾驶行为无法记录；\n
+        4.轨迹无法记录；\n
+    </string>
+<string name="obd_problem_exception_step_detail">
+        1.确认设备是否按照使用说明安装，并摆放在正确位置；\n
+        2确认设备中的SIM卡安装正确；\n
+        3.如果初次安装，请去确认您的车型选择是否正确；\n
+        4.排除环境因素：设备必须在有网络覆盖的环境使用，如处于无网络环境，如地下车库、偏僻山区等设备联网故障属于正常现象；\n
+    </string>
+<string name="obd_problem_help_text">
+        请排除上述原因，如需帮助请致电我们！
+    </string>
+<string name="obd_problem_help_phone">027-87256313</string>
+
+<!-- 绑定微信 -->
+<string name="title_bind_wx">绑定微信</string>
+<string name="jump">跳过</string>
+<string name="hint_bind_wx">绑定微信号,登录更便捷</string>
+<string name="pwd_length_not_enough">密码长度不够</string>
+
+<string name="pwd_limit">请输入密钥</string>
+<string name="phone_pwd_limit">请输入您的密码</string>
+
+<!-- 随手拍违章 -->
+<string name="violation_take_photo_explain_top">
+        如何进行违章举报
+    </string>
+<string name="violation_take_photo_explain">
+        1.违章举报需要拍摄至少3张照片。\n
+        2.违章举报的图片，要清晰反应违章车辆号牌，违章车辆外观及违章事实，建议在图像中清晰显示出违章地点的标志性建筑。\n
+        3.驾驶员在行车过程中要严格遵守交通法规，不得在驾驶过程中或其它妨碍交通安全的情况下拍摄。\n
+    </string>
+<string name="violation_take_photo_tip_1">
+        拍违章需要提供3张图片
+    </string>
+<string name="violation_take_photo_tip_2">
+        图片需要清晰反应违章车辆号牌、外观及违章事实
+    </string>
+<string name="violation_take_photo_tip_3">
+        驾驶员不得在驾驶过程中拍摄
+    </string>
+
+<string name="violation_praise">%d个赞</string>
+<string name="violation_comment">%d条评论</string>
+<string name="violation_forward">%d个转发</string>
+
+
+<!-- 保险报案 -->
+<string name="insurance_report_in_title">事故快处理</string>
+<string name="insurance_report_prefect_info">完善当事人信息</string>
+<string name="insurance_report_owner_car_text">本方驾驶人及车辆信息</string>
+<string name="insurance_report_other_car_text">对方驾驶人及车辆信息</string>
+<string name="insurance_report_insure_company">投保公司</string>
+<string name="insurance_report_accident_live_photo">现场图片</string>
+<string name="duty_belong">责任认定:</string>
+
+<string name="insurance_report_input_owner_username">请输入本方驾驶人姓名</string>
+<string name="insurance_report_input_owner_phone">请输入本方手机号</string>
+<string name="insurance_report_input_owner_license_plate">请输入本方车牌号</string>
+<string name="insurance_report_input_owner_driver_license">请输入本方驾驶证号</string>
+<string name="insurance_report_input_owner_company">请选择本方保险公司</string>
+<string name="limits_camera_no_text">相机权限被禁止，请去设置中设置</string>
+<string name="limits_location_no_text">获取位置失败，请检查定位或网络</string>
+<string name="insurance_report_success">报案成功</string>
+
+<string name="insurance_report_input_other_username">请输入对方驾驶人姓名</string>
+<string name="insurance_report_input_other_license_plate">请输入对方车牌号</string>
+<string name="insurance_report_input_other_driver_license">请输入对方驾驶证号</string>
+<string name="insurance_report_input_other_company">请选择对方保险公司</string>
+<string name="insurance_report_input_other_phone">请输入对方手机号</string>
+<string name="insurance_report_input_other_accident_type">请选择事故类型</string>
+<string name="insurance_report_takephone_one_max_value">单车事故现场图片最多12张照片</string>
+<string name="insurance_report_takephone_more_max_value">多车事故现场图片最多16张照片</string>
+<string name="insurance_report_input_phone">请输入手机号</string>
+
+<string name="insurance_report_input_username">请输入驾驶人姓名</string>
+<string name="insurance_report_input_license_plate">请输入车牌号</string>
+<string name="insurance_report_input_driver_license">请输入驾驶证号</string>
+<string name="insurance_report_input_company">请选择保险公司</string>
+<string name="insurance_upload_driver_licence">请上传驾驶证图片</string>
+<string name="insurance_upload_driver_license">请上传行驶证图片</string>
+
+<string name="insurance_report_phone">手机号</string>
+<string name="insurance_report_driving_license_no">驾驶证号</string>
+<string name="insurance_report_choose_insure_company">请选择保险公司</string>
+
+<string name="insurance_rep_name">姓名:</string>
+<string name="insurance_rep_phone">手机号:</string>
+<string name="insurance_rep_license_plate">车牌号:</string>
+<string name="insurance_rep_driving_licence">驾驶证号:</string>
+<string name="insurance_rep_company_name">投保公司:</string>
+
+
+<string name="insurance_report_accident_describe">情形描述</string>
+<string name="insurance_report_has_dispute">有争议</string>
+<string name="insurance_report_no_dispute">无争议</string>
+<string name="insurance_report_dispute_describe_text">对事故责任有争议的可以由交警协助定责</string>
+
+<string name="insurance_report_accident_duty_affirmation">事故责任认定</string>
+
+<string name="insurance_report_owner_driver_duty">本方驾驶人责任</string>
+<string name="insurance_report_other_driver_duty">对方驾驶人责任</string>
+<string name="insurance_report_owner_driver_sign">本方驾驶人确认签字</string>
+<string name="insurance_report_other_driver_sign">对方驾驶人确认签字</string>
+<string name="insurance_report_click_sign">点击签字</string>
+<string name="insurance_report_duty_type_owner">本方全责</string>
+<string name="insurance_report_duty_type_our">双方同责</string>
+<string name="insurance_report_duty_type_other">对方全责</string>
+<string name="insurance_report_do_quick_option_note">生成快速处理单</string>
+<string name="insurance_report_police_do_duty">交警协助定责</string>
+<string name="insurance_report_police_wait_time">已经等待%d秒</string>
+<string name="insurance_report_police_call_time">已经等待%d分钟\n建议取消协助\n并拨打122进行报警</string>
+<string name="insurance_report_cancel_police_option">取消交警协助</string>
+<string name="insurance_report_police_option_advice">交警指导意见</string>
+<string name="insurance_report_police_option_no">不认可</string>
+<string name="insurance_report_police_option_yes">认可</string>
+<string name="insurance_report_settlement_title">保险理赔</string>
+<string name="insurance_report_settlement_tip1">事故照片与当事人信息\n已传至保险公司</string>
+<string name="insurance_report_settlement_tips">请等待保险公司与您主动联系\n并为您提供理赔等相关后续服务</string>
+<string name="insurance_report_settlement_time_tips">如果您有任何意见，请拨打保险公司电话</string>
+<string name="insurance_report_settlement_phone_tips">联系电话:</string>
+<string name="insurance_report_settlement_phone_tips_value">%s</string>
+
+<string name="insurance_report_prefect_accident_info_text">完善事故信息</string>
+<string name="insurance_report_i_know">我知道了</string>
+<string name="insurance_report_continue_option">继续处理</string>
+<string name="add_user_info">完善信息</string>
+<string name="insurance_report_has_dispute_dialog_title">还存在争议，与交警电话沟通</string>
+<string name="insurance_report_has_dispute_dialog_btn_call_phone">拨打电话</string>
+<string name="insurance_report_message_sended">短信已发送，请注意查收!</string>
+
+
+<!-- 我的 -->
+<string name="mine_nickname">昵称</string>
+<string name="mine_header_img_text">头像</string>
+<string name="mine_industry_text">行业</string>
+<string name="mine_weixin_text">关联微信</string>
+<string name="mine_driver_info_text">驾驶证信息</string>
+<string name="mine_driving_info_text">行驶证信息</string>
+
+<string name="mine_please_choose">请选择</string>
+<string name="mine_please_input">请填写</string>
+<string name="mine_please_bind_wx">点击绑定</string>
+<string name="mine_please_input_nickname">请输入昵称</string>
+
+
+<!-- 驾驶证 -->
+<string name="auth_driver_license_title">驾驶证认证</string>
+<string name="auth_real_name_text">真实姓名</string>
+<string name="auth_driver_license_num_text">驾照号</string>
+<string name="auth_sex_text">性别</string>
+<string name="auth_birthday_text">出生日期</string>
+<string name="auth_once_forwarding_day">初次领证日期</string>
+
+<string name="driver_info_title">驾驶证信息</string>
+<string name="driver_info_please_input">请如实填写驾驶证信息</string>
+<string name="driver_info_comfire_input">请核对本人驾驶证识别信息，并确认无误</string>
+
+
+<!-- 违章查询-->
+<string name="illegal_query_title">违章查询</string>
+<string name="illegal_query_count_score">总计扣分：%d</string>
+<string name="illegal_query_count_fine">总计罚款：%s</string>
+<string name="illegal_query_area">违章地点</string>
+<string name="illegal_query_content">违章内容</string>
+<string name="illegal_query_date">违章时间</string>
+<string name="illegal_query_current_status">当前状态</string>
+<string name="illegal_query_fine_count">罚款金额</string>
+<string name="illegal_query_item_score">%d分</string>
+<string name="illegal_query_item_money">%d元</string>
+<string name="illegal_query_no_deal">未处理</string>
+<string name="illegal_query_yes_deal">已处理</string>
+
+<!--城市选择-->
+<string name="select_city">选择城市</string>
+<string name="hot_city">热门城市</string>
+<string name="located_city">定位城市</string>
+<string name="hint_search_box">请输入城市名或拼音</string>
+<string name="nothing_found">没有搜索结果~</string>
+<string name="locating">正在定位…</string>
+<string name="located_failed">定位失败</string>
+
+
+<!-- 随手拍违章 -->
+<string name="violation_take_photo">#随手拍违章#</string>
+<!-- 刷新 -->
+<string name="pull_to_refresh">下拉刷新</string>
+<string name="release_to_refresh">释放立即刷新</string>
+<string name="refreshing">正在刷新...</string>
+<string name="refresh_succeed">刷新成功</string>
+<string name="refresh_fail">刷新失败</string>
+<string name="pullup_to_load">上拉加载更多</string>
+<string name="release_to_load">释放立即加载</string>
+<string name="load_succeed">加载成功</string>
+<string name="load_fail">加载失败</string>
+
+<string name="copyright">六点整北斗 版权所有\nCopyright © 2015-2017 Bidostar.All Rights Reserved</string>
+
+<string name="route_detail_mileage_time_price">%1$.1f km %2$d min</string>
+<string name="action_settings">Settings</string>
+<string name="driver_speed">%1$dkm/h</string>
+<string name="driver_minute">%1$s%2$s</string>
+<string name="notify_security_location">%1$s:%2$s</string>
+
+<string name="upload_progress">正在上传照片(%1$d/%2$d %3$s)</string>
+
+<string name="please_bind_pinan_box">请先绑定即时判设备</string>
+<string name="car_location_info">目前正在使用后视镜/OBD记录\n行驶轨迹,无法使用手机记录</string>
+
+<string name="please_sign_name">请%1$s在下方区域内签名确认事故责任</string>
+
+<string name="pinan_award_explain">积分奖励说明</string>
+<string name="pinan_award_explain_detail">1 行驶日与停驶日都会获得积分。\n2 行驶日的驾驶得分会影响到你获得到的奖励。\n3 得到的积分=基础积分X奖励系数。\n4 积分可以用于车险抵值，以及积分商城的物品购买。</string>
+<string name="cash_award_explain">现金奖励说明</string>
+<string name="cash_award_explain_detail">1 现金奖励，可以通过参加即时判举行的各类活动获取。\n2 在满足一定条件之后，积分可以兑换成现金。</string>
+
+
+<string name="guide_one_content_title">360度车况检测</string>
+<string name="guide_one_content">全方位智能检测，让您的爱车远离亚健康</string>
+<string name="guide_two_content_title">保险报案</string>
+<string name="guide_two_content">快速理赔，更贴心的服务</string>
+<string name="guide_three_content_title">炫酷行程轨迹</string>
+<string name="guide_three_content">历史轨迹播放，记录爱的足迹</string>
+
+<string name="avaliable_balance">可提现额度</string>
+<string name="wechat_take_money">微信提现</string>
+<string name="my_income">我的收入</string>
+<string name="take_money_record">提现记录</string>
+<string name="bind_device_please">请先绑定即时判设备</string>
+<string name="bidostar_box">六点整北斗盒子</string>
+<string name="unbind_bidostar_box">解绑六点整北斗盒子</string>
+<string name="confirm_unbind_bidostar_box">确定解绑该六点整北斗盒子吗？</string>
+<string name="instant_jdument_mirror">即时判后视镜</string>
+<string name="unbind_instant_judgmen_mirror">解绑即时判后视镜</string>
+<string name="confirm_unbind_instant_judgment_mirror">确定解绑该即时判后视镜吗？</string>
+<string name="not_bind_bidostar_box">未绑定即时判设备</string>
+<string name="add_car">请先添加您的车</string>
+
+<!-- 商城 -->
+<string name="shop_commidity_count">x%1$d</string>
+<string name="shop_bill_info">开发票</string>
+<string name="shop_integral_info">使用积分</string>
+<string name="shop_commodity_price">商品金额</string>
+<string name="shop_integral_user">积分</string>
+<string name="shop_freight">运费</string>
+<string name="shop_commodity_reality_money">合计</string>
+<string name="shop_submit_order">立即支付</string>
+<string name="shop_submit_order_pay">支付</string>
+<string name="shop_add_receive_address">新增收货地址</string>
+<string name="shop_add_address">新增地址</string>
+<string name="shop_user_integral_count">可使用%1$d积分</string>
+<string name="shop_user_integral_to_rmb_count">兑换现金%1$.2f元</string>
+<string name="shop_no_open_bill">不开发票</string>
+<string name="shop_title_order">确认订单</string>
+<string name="shop_title_order_detail">订单详情</string>
+<string name="shop_order_address_username">收货人:</string>
+<string name="shop_order_address_phone">手机号码:</string>
+<string name="shop_order_address_city">省/市/区:</string>
+<string name="shop_order_address_describe">小区、街道、门牌等信息</string>
+<string name="shop_order_address_default_text">设为默认收货地址</string>
+<string name="shop_order_address_default_attention">注：下次下单时默认使用该地址</string>
+<string name="shop_address_username_not_null">收货人不能为空</string>
+<string name="shop_address_phone_not_null">手机号码不能为空</string>
+<string name="shop_address_city_not_null">请选择省/市/区</string>
+<string name="shop_address_city_describe_not_null">请填写小区、街道、门牌等信息</string>
+<string name="update">编辑</string>
+<string name="delete">删除</string>
+<string name="shop_receive_address">收货地址</string>
+<string name="shop_receive_address_max">最多只能保存3个收货地址</string>
+<string name="shop_use_integral">使用积分</string>
+<string name="shop_no_use_integral">无可用积分</string>
+<string name="shop_use_integral_tip">商品总额须超过%1$.0f元可用</string>
+<string name="shop_order_number">订单编号 : %s</string>
+<string name="shop_order_wx_no">微信交易号 : %s</string>
+<string name="shop_order_create_time">创建时间 : %s</string>
+<string name="shop_order_pay_money_time">付款时间 : %s</string>
+<string name="shop_order_status">订单状态</string>
+<string name="shop_bill_manage">发票管理</string>
+<string name="shop_bill_info_text">发票信息</string>
+<string name="shop_bill_header">发票抬头 : </string>
+<string name="shop_tip_submit_order_exit">返回将丢失已填写的订单信息哦!</string>
+<string name="shop_tip_me_think">我再想想</string>
+<string name="shop_tip_exit_yes">去意已决</string>
+<string name="shop_tip_cancel_order">确认取消该订单吗?</string>
+
+
+<string name="loading_good_details">正在加载商品详情...</string>
+<string name="market_help_notice">如果您在购物过程中遇到什么困难，\n请您联系我们客服，谢谢您的谅解。</string>
+<string name="confirm_cancel_order">确认取消订单？</string>
+<string name="officer_website">即时判官网</string>
+
+
+<!-- 后视镜 -->
+<string name="mirror_location">位置：%s</string>
+<string name="mirror_time">时间：%s</string>
+
+<string name="confirm_delete_route">删除后将无法找回该段行程记录，确认删除么？</string>
+<string name="map_baidu">百度地图</string>
+<string name="map_gaode">高德地图</string>
+
+<string name="login_protocol_notice">登录则表示您已同意遵守《即时判服务协议》</string>
+<string name="clear_success">清除成功</string>
+<string name="about">关于</string>
+<string name="loading_checking">检查中..</string>
+<string name="no_new_version">没有发现新版本</string>
+<string name="update_ing">正在更新</string>
+<string name="permission_force_open_storage">在设置-应用-即时判-权限中开启存储空间权限,以正常使用即时判功能</string>
+<string name="permission_storage">在设置-应用-即时判-权限中开启存储空间权限</string>
+<string name="permission_call">在设置-应用-即时判-权限中开启拨打电话权限</string>
+<string name="permission_camera">在设置-应用-即时判-权限中开启相机权限</string>
+<string name="permission_location">在设置-应用-即时判-权限中开启定位权限</string>
+<string name="permission_apply">权限申请</string>
+<string name="go_setting">去设置</string>
+<string name="unknow_location">未知位置</string>
+
+<string name="market_tran_name">market</string>
+
+
+<string name="driver_car_trigger_speed">车辆行驶触发的速度:%1$skm/h</string>
+<string name="driver_car_trigger_speed_count">+%1$s</string>
+<string name="test_content">测试内容</string>
+<string name="operaing">正在操作...</string>
+<string name="home_no_driver_score">无驾驶得分信息</string>
+
+<!--请求权限描述-->
+<string name="permission_pager_login"><Data><![CDATA[在设置-应用-即时判-权限中开启<font color="#FF0000">电话,存储，位置</font>权限,以正常使用即时判功能]]></Data></string>
+<string name="permission_pager_obdunusual"><Data><![CDATA[在设置-应用-即时判-权限中开启<font color="#FF0000">电话</font>权限,以正常使用即时判功能]]></Data></string>
+
+
+<string name="driver_award">驾驶奖励</string>
+<string name="yesterday_driver_scroe">昨日驾驶分数</string>
+<string name="msg">消息</string>
+<string name="flow_recharge_record">流量充值历史</string>
+<string name="flow_package">M流量包</string>
+<string name="flow_money">元</string>
+<string name="flow_date">2016.1.12</string>
+<string name="image_load_error">图片加载异常</string>
+
+
+<string name="home_tab_first">首页</string>
+<string name="home_tab_car_status">车况</string>
+<string name="home_tab_servce">服务</string>
+<string name="home_tab_mine">我的</string>
+
+<string name="flow">流量%sMB</string>
+<string name="point">积分%d</string>
+<string name="award_promote">奖励提升</string>
+
+
+<string name="title_mirror_function_flow_info">后视镜流量（MB）</string>
+<string name="mirror_control_info">后视镜远程控制</string>
+<string name="mirror_control_info_remote">发送位置给后视镜</string>
+<string name="dialog_bind_device">马上绑定</string>
+<string name="dialog_buy_device">购买设备</string>
+<string name="tv_notice_up_flow">绑定后视镜领取免费流量</string>
+<string name="mirror_control_find_car">导航到我的车</string>
+<string name="car_info_comfire_input">请核对本人行驶证识别信息，并确认无误</string>
+<string name="car_frame_number">车架号</string>
+<string name="album_paper">相册胶卷</string>
+<string name="camera_album">相机胶卷</string>
+<string name="publish">发布</string>
+<string name="location_you">所在位置</string>
+<string name="choose_location">选择位置</string>
+
+<string name="mirror_service">后视镜服务</string>
+<string name="title">标题</string>
+<string name="network_missing">网络走失</string>
+<string name="retry_load">轻触屏幕重新加载</string>
+<string name="no_data">暂无数据</string>
+<string name="send_comment">发表评论...</string>
+<string name="praise">赞</string>
+<string name="mirror_capture_picture">后视镜设备捕捉到的当前图像</string>
+<string name="loading_detail">正在加载详情...</string>
+<string name="loading_data">正在加载数据...</string>
+<string name="loading_comments">正在查询评论...</string>
+<string name="unfind_car_info">没有获取到车辆信息</string>
+<string name="car_info_auth">行驶证认证</string>
+<string name="fans">粉丝</string>
+<string name="follow">关注</string>
+<string name="support">赞</string>
+<string name="no_topic_to_show">还未发表动态</string>
+
+<string name="is_paying">正在支付...</string>
+<string name="mine_please_seletor">请选择</string>
+<string name="region">地区</string>
+<string name="signature">个性签名</string>
+
+
+<string name="consume_money">消费金额: %1$.2f 元</string>
+<string name="pay_money">用户支付: %1$.2f 元</string>
+<string name="consume_time">消费时间: %s</string>
+<string name="month_sale">月售%1$d单</string>
+<string name="remain_money">%1$.2f 元</string>
+<string name="service_price">￥%1$.0f</string>
+<string name="distance_km">%1$.1f km</string>
+<string name="distance_m">%1$d m</string>
+<string name="desc_signature_default">该用户比较懒，没有发表个人简介</string>
+<string name="insurance_info_desc_my">本方驾驶人及车辆信息</string>
+<string name="insurance_info_desc_other">对方驾驶人及车辆信息</string>
+<string name="accident_type">事故类型</string>
+<string name="please_write_desc">请写情形描述</string>
+<string name="history_topic">历史话题</string>
+<string name="clear_history_topic">清除历史</string>
+<string name="topic">话题</string>
+<string name="choice_video_hint">在后视镜中选择事故视频(非必选)</string>
+<string name="accident_video">事故视频</string>
+<string name="mirror_disconnect">后视镜没有连接</string>
+<string name="wifi_connect_mirror">wifi连接后视镜</string>
+<string name="code_connect_mirror">使用二维码连接设备</string>
+<string name="wifi_connect">连接后视镜WIFI</string>
+<string name="init_password">初始密码： 12345678</string>
+<string name="wifi_choose">选择WIFI</string>
+<string name="mirror_code">设备编码</string>
+<string name="comfire_connect">确认绑定</string>
+
+
+<string name="short_seconds">sec</string>
+<string name="megabyte">MB</string>
+<string name="kilobyte">KB</string>
+<string name="phone_number">手机号</string>
+<string name="driver_num">驾驶证号</string>
+<string name="company_insurance">投保公司</string>
+<string name="i_know">我知道了</string>
+
+
+<string name="wait_for_download">等待下载</string>
+<string name="user_del">解除绑定</string>
+<string name="no_name">未命名</string>
+<string name="tip_no_searched_device">请确保设备和手机位于同一WIFI网络</string>
+<string name="no_recorder">无记录仪</string>
+<string name="ip_setting">设备</string>
+<string name="connecting_ap">正在连接记录仪的WIFI热点</string>
+<string name="start_logcat_title">启动logcat</string>
+<string name="start_logcat">已经将logcat保存到sdcard文件中</string>
+<string name="tip_softap_open">Wifi热点已打开</string>
+<string name="tip_softap_close">Wifi热点已关闭</string>
+
+<string name="refresh">刷新</string>
+<string name="up_folder">上级目录</string>
+<string name="tab_preview">记录仪</string>
+<string name="dvr_device">＋</string>
+<string name="multiple">选择</string>
+<string name="capture_complete">抓拍完成，已保存到“手机文件”。</string>
+<string name="seek_switch_preview">切换到预览模式</string>
+<string name="seek_start_first">请先点击开始回放</string>
+<string name="cannot_switch_when_living">设备正在直播，不能切换摄像头</string>
+<string name="seek_switch_playback">切换到回放模式</string>
+<string name="seek_error_nostorage">设备端无存储器</string>
+<string name="seek_error_seek">快进快退错误</string>
+<string name="seek_error_playback">播放错误</string>
+<string name="record_front">前</string>
+<string name="record_rear">后</string>
+<string name="record_both">双</string>
+<string name="record_stop">已停止录像</string>
+<string name="rfile">记录仪文件</string>
+<string name="dvrset">记录仪设置</string>
+<string name="no_connect">未连接上记录仪</string>
+<string name="version_latest">已是最新版本</string>
+<string name="version_available">有最新版本可更新</string>
+<string name="version_install">是否对设备进行新版本安装？</string>
+<string name="version_downloading">正在下载：%1$d%%</string>
+<string name="version_check">正在检查版本更新</string>
+<string name="ok">确定</string>
+<string name="auto_save_m1">1分钟</string>
+<string name="auto_save_m2">2分钟</string>
+<string name="auto_save_m3">3分钟</string>
+<string name="high">高（1080P）</string>
+<string name="normal">普通（720P）</string>
+<string name="nobonduser">设备暂时没有用户绑定</string>
+<string name="bonduser">与设备绑定的用户</string>
+<string name="sdcard_storage_info">总容量：%1$s, 剩余空间：%2$s\n行车录影文件 ：%3$s, 其他：%4$s</string>
+<string name="nosdcard">没有发现SD卡</string>
+<string name="format_sdcard">对设备SD卡进行格式化?</string>
+<string name="sdcard_title">格式化SD卡</string>
+<string name="softap_config">名称：%1$s, 密码：%2$s</string>
+<string name="setting_wake_up_close">关</string>
+<string name="setting_wake_up_low">低</string>
+<string name="setting_wake_up_mid">中</string>
+<string name="setting_wake_up_high">高</string>
+<string name="auto_sleep_15minutes">未熄火停车15分钟后</string>
+<string name="auto_sleep_30minutes">未熄火停车30分钟后</string>
+<string name="auto_sleep_60minutes">未熄火停车60分钟后</string>
+<string name="auto_sleep_forbidden">禁止未熄火停车自动休眠</string>
+<string name="adas_calibration_tip">将在实时预览下校准</string>
+<string name="adas_calibration_jump">立刻进行校准？</string>
+<string name="system_setting">通用设置</string>
+<string name="softap_title">修改热点名称密码</string>
+<string name="mobile_title">移动数据连接（%1$s）</string>
+<string name="mobile_config">流量已使用：%1$s</string>
+<string name="mobile_disconnect">无连接</string>
+<string name="sleep_setting">设备休眠及碰撞</string>
+<string name="lock">行车过程中允许碰撞锁影</string>
+<string name="lock_detail">碰撞事故前后几十秒的视频会保存到锁影目录</string>
+<string name="adas_setting">ADAS</string>
+<string name="adas_calibration">ADAS 重新校准</string>
+<string name="adas_report">前车碰撞预警</string>
+<string name="adas_report2">车道偏离预警</string>
+<string name="adas_report3">前车起步提示</string>
+<string name="dvr_setting">录像设置</string>
+<string name="autosave_time_title">自动保存时间</string>
+<string name="front_quality_title">前摄像头的录像质量</string>
+<string name="gps_watermark">显示GPS水印信息</string>
+<string name="dvr_restart">重启录像</string>
+<string name="dvr_restart_tips">录像设置需重启录像后生效</string>
+<string name="update_setting">版本及更新</string>
+<string name="carassist_title">如需更多功能请下载手机端的车车助手</string>
+<string name="carassist_tip">点击后使用手机扫描二维码下载</string>
+<string name="mute_record">静音录像</string>
+<string name="gsensor">休眠时允许碰撞唤醒</string>
+<string name="gsensor_detail">监测到碰撞将自动抓拍图片并发送报警给慧眼</string>
+<string name="sensitive_title">碰撞灵敏度(建议在颠簸路况时降低灵敏度)</string>
+<string name="auto_sleep">自动休眠</string>
+<string name="auto_sleep_m15">15分钟</string>
+<string name="auto_sleep_m30">30分钟</string>
+<string name="auto_sleep_m60">60分钟</string>
+<string name="auto_sleep_mf">永不</string>
+<string name="deluser">将用户%1$s与设备解绑?</string>
+<string name="softap_pwd_hint">新热点密码（不能少于8位）</string>
+<string name="softap_ssid_hint">新热点名称（不能为空）</string>
+<string name="softap_prompt">请输入有效的热点名称与密码</string><string name="nosim">无SIM卡</string>
+
 </resources>

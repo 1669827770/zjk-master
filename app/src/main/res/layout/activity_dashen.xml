@@ -36,6 +36,12 @@
         android:text="中间的圆角矩形的dialog"/>
 
     <Button
+        android:id="@+id/btn_count_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Utils"/>
+
+    <Button
         android:id="@+id/utils"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
