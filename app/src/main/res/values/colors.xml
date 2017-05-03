@@ -6,4 +6,10 @@
 
     <color name="panel_black">#25272A</color>
     <color name="text_blue1">#1173CB</color>
+
+
+    <!-- 白色 -->
+    <color name="white">#FFFFFFFF</color>
+    <!-- 背景色 -->
+    <color name="bg_color">#EFEFF4</color>
 </resources>

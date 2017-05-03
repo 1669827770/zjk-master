@@ -50,6 +50,8 @@
     </style>
 
 
+
+
     <style name="maskDialog" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         <item name="android:windowBackground">@color/colorAccent</item>
     </style>

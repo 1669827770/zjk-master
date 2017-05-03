@@ -17,11 +17,19 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".DaShenActivity"></activity>
-        <activity android:name="move.MoveImageviewActivity"></activity>
-        <activity android:name="move.MoveViewActivity"></activity>
-        <activity android:name="move.WeigetMoveActivity"></activity>
-        <activity android:name="move.WelcomeActivity"></activity>
+        <activity android:name=".DaShenActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="move.MoveImageviewActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="move.MoveViewActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="move.WeigetMoveActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="move.WelcomeActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name="move.RulerActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 

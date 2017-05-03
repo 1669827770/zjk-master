@@ -1,6 +1,7 @@
 package videodemo;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.view.View;
 import dialog.AddrDialog2;
 import move.MoveImageviewActivity;
 import move.MoveViewActivity;
+import move.RulerActivity;
 import move.WeigetMoveActivity;
 import move.WelcomeActivity;
 
@@ -87,6 +89,28 @@ public class DaShenActivity extends Activity {
                 startActivity(new Intent(DaShenActivity.this, WelcomeActivity.class));
             }
         });
+
+        findViewById(R.id.btn_anim_compress).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+
+        findViewById(R.id.btn_ruler).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DaShenActivity.this, RulerActivity.class));
+            }
+        });
+
+
+
+
+
+
+
 
 
 

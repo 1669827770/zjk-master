@@ -42,10 +42,47 @@
         android:text="Utils"/>
 
     <Button
-        android:id="@+id/utils"
+        android:id="@+id/btn_anim_compress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Utils"/>
+        android:text="载入动画进度条"/>
+
+    <Button
+        android:id="@+id/btn_ruler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="尺子"/>
+
+
+    <Button
+        android:id="@+id/btn_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机视频"/>
+
+
+    <Button
+        android:id="@+id/btn_change_heighTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="高度可变的textview"/>
+
+    <Button
+        android:id="@+id/btn_change_heighRecycleview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="高度可变的recycleview"/>
+
+
+    <Button
+        android:id="@+id/btn__viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="特效的viewpager"/>
+
+
+
+
 
 
 
