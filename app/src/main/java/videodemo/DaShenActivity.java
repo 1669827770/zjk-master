@@ -78,6 +78,7 @@ public class DaShenActivity extends Activity {
                 //这里要是传getApplication,getApplicationContext都不能显示dialog
                 AddrDialog2 addrDialog2 = new AddrDialog2(DaShenActivity.this,R.style.filletDialog);
 
+
                 addrDialog2.show();
             }
         });
