@@ -101,7 +101,12 @@
         android:layout_height="wrap_content"
         android:text="glide"/>
 
-
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/btn_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity进出动画"/>
 
 
 

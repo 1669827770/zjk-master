@@ -1,1 +1,1 @@
-include ':app',':shvideolibrary'
+include ':app'
