@@ -7,9 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 
 import dialog.AddrDialog2;
+import move.GlideActivity;
 import move.MoveImageviewActivity;
 import move.MoveViewActivity;
 import move.RulerActivity;
+import move.ViewpagerActivity;
 import move.WeigetMoveActivity;
 import move.WelcomeActivity;
 
@@ -106,6 +108,23 @@ public class DaShenActivity extends Activity {
             }
         });
 
+
+
+
+        findViewById(R.id.btn__viewpager).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DaShenActivity.this, ViewpagerActivity.class));
+            }
+        });
+
+
+        findViewById(R.id.btn_glide).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DaShenActivity.this, GlideActivity.class));
+            }
+        });
 
 
 

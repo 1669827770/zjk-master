@@ -30,6 +30,12 @@
 
         <activity android:name="move.RulerActivity"
             android:screenOrientation="portrait"></activity>
+        <activity android:name="move.ViewpagerActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="move.GlideActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
     </application>
 
 
