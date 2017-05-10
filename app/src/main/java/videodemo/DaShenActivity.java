@@ -10,6 +10,7 @@ import dialog.AddrDialog2;
 import move.GlideActivity;
 import move.MoveImageviewActivity;
 import move.MoveViewActivity;
+import move.RecycleViewActivity;
 import move.RulerActivity;
 import move.ViewpagerActivity;
 import move.WeigetMoveActivity;
@@ -109,6 +110,13 @@ public class DaShenActivity extends Activity {
         });
 
 
+
+        findViewById(R.id.btn_Recycleview).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DaShenActivity.this, RecycleViewActivity.class));
+            }
+        });
 
 
         findViewById(R.id.btn__viewpager).setOnClickListener(new View.OnClickListener() {

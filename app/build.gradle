@@ -30,4 +30,9 @@ dependencies {
     compile project(':shvideolibrary')
     compile files('src/main/libs/nineoldandroids-2.4.0.jar')
     compile 'com.github.bumptech.glide:glide:3.8.0'
+    /**
+     * 这里比较无语就是刚开始会与 compile 'com.android.support:appcompat-v7:25.3.1'爆红，然后右键一搞没事了
+     */
+    compile 'com.android.support:recyclerview-v7:23.0.1'
+
 }

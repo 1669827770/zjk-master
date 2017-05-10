@@ -35,6 +35,6 @@ public class GlideActivity extends Activity {
 
 
         mImgGlide2 = (ImageView) findViewById(R.id.img_glide2);
-        Glide.with(this).load(R.drawable.guide_image2).bitmapTransform(new GlideRoundTransform(this,10)).into(mImgGlide2);
+        Glide.with(this).load(R.drawable.guide_image2).bitmapTransform(new GlideRoundTransform(this,50)).into(mImgGlide2);
     }
 }

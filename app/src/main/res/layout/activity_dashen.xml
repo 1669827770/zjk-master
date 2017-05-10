@@ -72,10 +72,18 @@
 
     <Button
         android:textAllCaps="false"
+        android:id="@+id/btn_Recycleview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="recycleview使用"/>
+
+    <Button
+        android:textAllCaps="false"
         android:id="@+id/btn_change_heighRecycleview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="高度可变的recycleview"/>
+
 
 
     <Button
