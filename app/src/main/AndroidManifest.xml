@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="videodemo">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,25 +21,29 @@
 
         <activity android:name=".DaShenActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name="move.MoveImageviewActivity"
+        <activity android:name="activity.MoveImageviewActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name="move.MoveViewActivity"
+        <activity android:name="activity.MoveViewActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name="move.WeigetMoveActivity"
+        <activity android:name="activity.WeigetMoveActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name="move.WelcomeActivity"
+        <activity android:name="activity.WelcomeActivity"
             android:screenOrientation="portrait"></activity>
 
-        <activity android:name="move.RulerActivity"
+        <activity android:name="activity.RulerActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name="move.ViewpagerActivity"
+        <activity android:name="activity.ViewpagerActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name="move.GlideActivity"
+        <activity android:name="activity.GlideActivity"
             android:screenOrientation="portrait">
 
         </activity>
-        <activity android:name="move.RecycleViewActivity"
+        <activity android:name="activity.RecycleViewActivity"
             android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="activity.video.ChoosePhotosActivity"
+            android:screenOrientation="portrait">
+
         </activity>
     </application>
 

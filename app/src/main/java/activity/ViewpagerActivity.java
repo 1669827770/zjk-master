@@ -1,4 +1,4 @@
-package move;
+package activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -12,8 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 import videodemo.R;
 import view.viewpager.RotateDownPageTransformer;
-import view.viewpager.ZoomOutPageTransformer;
-import view.viewpagerr.DepthPageTransformer;
 
 /**
  * Created by admin on 2017-05-10.

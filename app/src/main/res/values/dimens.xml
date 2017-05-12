@@ -51,5 +51,6 @@
     <dimen name="dp6">6dp</dimen>
     <dimen name="dp130">130dp</dimen>
     <dimen name="dp85">85dp</dimen>
+    <dimen name="dp15">15dp</dimen>
 
 </resources>

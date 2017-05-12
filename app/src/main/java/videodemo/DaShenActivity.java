@@ -1,20 +1,21 @@
 package videodemo;
 
 import android.app.Activity;
-import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import activity.video.ChoosePhotosActivity;
 import dialog.AddrDialog2;
-import move.GlideActivity;
-import move.MoveImageviewActivity;
-import move.MoveViewActivity;
-import move.RecycleViewActivity;
-import move.RulerActivity;
-import move.ViewpagerActivity;
-import move.WeigetMoveActivity;
-import move.WelcomeActivity;
+import activity.GlideActivity;
+import activity.MoveImageviewActivity;
+import activity.MoveViewActivity;
+import activity.RecycleViewActivity;
+import activity.RulerActivity;
+
+import activity.ViewpagerActivity;
+import activity.WeigetMoveActivity;
+import activity.WelcomeActivity;
 
 
 /**
@@ -22,7 +23,6 @@ import move.WelcomeActivity;
  */
 
 public class DaShenActivity extends Activity {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,6 +83,14 @@ public class DaShenActivity extends Activity {
 
 
                 addrDialog2.show();
+            }
+        });
+
+
+        findViewById(R.id.btn_video).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DaShenActivity.this, ChoosePhotosActivity.class));
             }
         });
 

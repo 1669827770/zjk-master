@@ -7,17 +7,28 @@
         android:layout_height="160dp"
         android:layout_width="90dp"
         android:scaleType="fitXY"/>
-    <Button
-        android:id="@+id/button4"
-        android:layout_height="60dp"
-        android:layout_width="match_parent"
-        android:text="跳到大神界面"/>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_height="60dp"
-        android:layout_width="match_parent"
-        android:text="录制短视频"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:text="录制短视频"/>
+
+        <Button
+            android:background="@android:color/transparent"
+            android:id="@+id/button4"
+            android:layout_height="60dp"
+            android:layout_width="60dp"
+
+            />
+
+    </RelativeLayout>
+
     <Button
         android:id="@+id/button2"
         android:layout_height="60dp"

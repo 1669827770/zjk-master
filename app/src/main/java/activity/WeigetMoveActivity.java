@@ -1,21 +1,14 @@
-package move;
+package activity;
 
 import android.app.Activity;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.view.Gravity;
-import android.view.Menu;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 
 import videodemo.R;
-import view.DrawView;
-import view.MoveImageView;
 
 /**
  * Created by admin on 2017-04-21.
