@@ -106,9 +106,8 @@ public class VideoGridViewAdapter extends RecyclerView.Adapter<VideoGridViewAdap
             durationTv = (TextView) itemView.findViewById(R.id.video_duration);
             videoSelectPanel = itemView.findViewById(R.id.video_select_panel);
             selectIcon = (ImageView) itemView.findViewById(R.id.select);
-
-            int size = Utils.getScreenWidth(context)/ 4;
-
+            int screenWidth = Utils.getScreenWidth(context);
+            int size = screenWidth / 4;
             FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) videoCover.getLayoutParams();
             params.width = size;
             params.height = size;

@@ -4,6 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
     <Button
         android:id="@+id/move_imageview"
@@ -109,5 +117,32 @@
         android:text="Activity进出动画"/>
 
 
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/btn_sr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scroview与Recycleviwew显示不全问题"/>
+
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/btn_sr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scroview与Recycleviwew没有惯性问题"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/btn_swipRe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="swiperefreshlayout的简单使用"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

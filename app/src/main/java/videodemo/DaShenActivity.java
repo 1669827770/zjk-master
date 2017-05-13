@@ -4,7 +4,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ScrollView;
 
+import activity.SViewOrRviewBattleActivity;
 import activity.video.ChoosePhotosActivity;
 import dialog.AddrDialog2;
 import activity.GlideActivity;
@@ -143,6 +145,26 @@ public class DaShenActivity extends Activity {
         });
 
 
+        findViewById(R.id.btn_sr).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DaShenActivity.this, SViewOrRviewBattleActivity.class));
+            }
+        });
+
+        findViewById(R.id.btn_sr2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DaShenActivity.this, GlideActivity.class));
+            }
+        });
+
+        findViewById(R.id.btn_swipRe).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DaShenActivity.this, GlideActivity.class));
+            }
+        });
 
 
 

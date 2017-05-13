@@ -1,4 +1,6 @@
 package activity.video;
+
+
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
@@ -14,7 +16,6 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -28,6 +29,7 @@ import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.Toast;
 import android.widget.VideoView;
+
 import com.bumptech.glide.Glide;
 
 import java.io.File;
@@ -35,10 +37,13 @@ import java.util.ArrayList;
 
 import util.Utils;
 import videodemo.R;
+import view.MyRecycleview;
 
 
 /**
- * Created by admin on 2017-04-12.
+ * Created by zhangbing on 2017-05-12.
+ * 知识点：recyclevbiew与ScroLLview的冲突一就是recyclevbiew一行都不显示，解决办法就是重写recycleview的onMeasure方法
+ *
  */
 
 public class ChooseVideoFragment extends Fragment implements View.OnTouchListener,View.OnClickListener {
@@ -63,7 +68,7 @@ public class ChooseVideoFragment extends Fragment implements View.OnTouchListene
     View messageLayout;
     public ArrayList<VideoInfo> allVideos;
 
-    RecyclerView mvideo_select_recyclerview;
+    MyRecycleview mvideo_select_recyclerview;
     ImageView miv_back_topic2;
     Button mbtn_next;
     VideoView mvv;
@@ -89,15 +94,20 @@ public class ChooseVideoFragment extends Fragment implements View.OnTouchListene
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         if(allVideos.size()>0){
             //覆盖videoview的图
-            videoPath = allVideos.get(0).getVideoPath();
+
 
             ArrayList<VideoInfo> videoInfos = new ArrayList<>();
             for (int i = 0; i <allVideos.size() ; i++) {
                 VideoInfo videoInfo = allVideos.get(i);
-                if(videoInfo.getDuration()>5000){
+                String videoName = videoInfo.getVideoName();
+
+                if(videoInfo.getDuration()>5000&&!videoName.contains("yang")){
+
                     videoInfos.add(videoInfo);
+
                 }
             }
+            videoPath = videoInfos.get(0).getVideoPath();
             this.videoListData = videoInfos;
             if(videoInfos.size()==0){
                 Toast.makeText(getContext(),"您的手机内没有大于5秒的视频", Toast.LENGTH_SHORT).show();
@@ -108,7 +118,7 @@ public class ChooseVideoFragment extends Fragment implements View.OnTouchListene
 
             manager = new GridLayoutManager(getActivity(), 4);
             messageLayout = inflater.inflate(R.layout.fragment_video, container, false);
-            mvideo_select_recyclerview = (RecyclerView) messageLayout.findViewById(R.id.video_select_recyclerview);
+            mvideo_select_recyclerview = (MyRecycleview) messageLayout.findViewById(R.id.video_select_recyclerview);
             miv_back_topic2 = (ImageView) messageLayout.findViewById(R.id.iv_back_topic2);
             icon_video_thumbnail = (ImageView) messageLayout.findViewById(R.id.icon_video_thumbnail);
             mbtn_next = (Button) messageLayout.findViewById(R.id.btn_next);
@@ -116,7 +126,7 @@ public class ChooseVideoFragment extends Fragment implements View.OnTouchListene
             mPlayView = ((ImageView) messageLayout.findViewById(R.id.icon_video_play));
             progressBar = (ProgressBar) messageLayout.findViewById(R.id.progressBar);
 
-            my_scrollView = (MyScrollview) messageLayout.findViewById(R.id.my_scrollView);
+//            my_scrollView = (MyScrollview) messageLayout.findViewById(R.id.my_scrollView);
             change_video = (ImageView) messageLayout.findViewById(R.id.change_video);
 
 //刚进来的时候就会播放，所以不需要缩略图
@@ -349,7 +359,7 @@ public class ChooseVideoFragment extends Fragment implements View.OnTouchListene
 
     /**
      * 需要设计成异步的
-     * 如果没有加载出来，可能是没有配置权限
+     *
      * @param mContext
      * @return
      */
@@ -375,7 +385,6 @@ public class ChooseVideoFragment extends Fragment implements View.OnTouchListene
             cursor.close();
         } catch (Exception e) {
             e.printStackTrace();
-
         }
         return videos1;
     }
