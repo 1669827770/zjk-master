@@ -35,14 +35,16 @@ import com.bumptech.glide.Glide;
 import java.io.File;
 import java.util.ArrayList;
 
+import activity.SViewOrRviewBattleActivity;
 import util.Utils;
 import videodemo.R;
+import view.FullyGridLayoutManager;
 import view.MyRecycleview;
 
 
 /**
  * Created by zhangbing on 2017-05-12.
- * 知识点：recyclevbiew与ScroLLview的冲突一就是recyclevbiew一行都不显示，解决办法就是重写recycleview的onMeasure方法
+ * 知识点：recyclevbiew与ScroLLview的冲突
  *
  */
 
@@ -72,8 +74,8 @@ public class ChooseVideoFragment extends Fragment implements View.OnTouchListene
     ImageView miv_back_topic2;
     Button mbtn_next;
     VideoView mvv;
-    ImageView mPlayView;   //点击播放暂停按钮
-    ImageView icon_video_thumbnail;
+//    ImageView mPlayView;   //点击播放暂停按钮
+//    ImageView icon_video_thumbnail;
     Boolean isFirstPlay = true;
 
     GridLayoutManager manager;
@@ -118,12 +120,14 @@ public class ChooseVideoFragment extends Fragment implements View.OnTouchListene
 
             manager = new GridLayoutManager(getActivity(), 4);
             messageLayout = inflater.inflate(R.layout.fragment_video, container, false);
+
             mvideo_select_recyclerview = (MyRecycleview) messageLayout.findViewById(R.id.video_select_recyclerview);
+            my_scrollView = (MyScrollview) messageLayout.findViewById(R.id.my_scrollView);
             miv_back_topic2 = (ImageView) messageLayout.findViewById(R.id.iv_back_topic2);
-            icon_video_thumbnail = (ImageView) messageLayout.findViewById(R.id.icon_video_thumbnail);
+//            icon_video_thumbnail = (ImageView) messageLayout.findViewById(R.id.icon_video_thumbnail);
             mbtn_next = (Button) messageLayout.findViewById(R.id.btn_next);
             mvv = (VideoView) messageLayout.findViewById(R.id.vv);
-            mPlayView = ((ImageView) messageLayout.findViewById(R.id.icon_video_play));
+//            mPlayView = ((ImageView) messageLayout.findViewById(R.id.icon_video_play));
             progressBar = (ProgressBar) messageLayout.findViewById(R.id.progressBar);
 
 //            my_scrollView = (MyScrollview) messageLayout.findViewById(R.id.my_scrollView);
@@ -133,9 +137,12 @@ public class ChooseVideoFragment extends Fragment implements View.OnTouchListene
 //            Glide.with(this).load(videoPath).thumbnail(0.1f).into(icon_video_thumbnail);
             mvideo_select_recyclerview.addItemDecoration(new SpacesItemDecoration(15));
             mvideo_select_recyclerview.setHasFixedSize(true);
-            mvideo_select_recyclerview.setAdapter(videoGridViewAdapter);
-            mvideo_select_recyclerview.setLayoutManager(manager);
 
+            FullyGridLayoutManager fullyGridLayoutManager = new FullyGridLayoutManager(getActivity(), 4);
+            mvideo_select_recyclerview.setNestedScrollingEnabled(false);
+            mvideo_select_recyclerview.setLayoutManager(fullyGridLayoutManager);
+
+            mvideo_select_recyclerview.setAdapter(videoGridViewAdapter);
 
             mvv.setOnTouchListener(this);
 
@@ -220,9 +227,9 @@ public class ChooseVideoFragment extends Fragment implements View.OnTouchListene
                     intent.putExtra("chooseVideoFragment", videoPath);
                     startActivity(intent);
                     //解决视频裁剪界面返回来，vieoview没有照片展示问题   ,关闭掉还可以操作
-                    mPlayView.setVisibility(View.VISIBLE);
-                    icon_video_thumbnail.setVisibility(View.VISIBLE);
-                    Glide.with(getContext()).load(videoPath).thumbnail(0.1f).into(icon_video_thumbnail);
+//                    mPlayView.setVisibility(View.VISIBLE);
+//                    icon_video_thumbnail.setVisibility(View.VISIBLE);
+//                    Glide.with(getContext()).load(videoPath).thumbnail(0.1f).into(icon_video_thumbnail);
 
 
                 }
@@ -261,8 +268,8 @@ public class ChooseVideoFragment extends Fragment implements View.OnTouchListene
                         isFirstPlay = false;
                         ChooseVideoFragment.this.videoPath = video.getVideoPath();
                         placevideo(ChooseVideoFragment.this.videoPath);//播放视频
-                        mPlayView.setVisibility(View.INVISIBLE);
-                        icon_video_thumbnail.setVisibility(View.INVISIBLE);
+//                        mPlayView.setVisibility(View.INVISIBLE);
+//                        icon_video_thumbnail.setVisibility(View.INVISIBLE);
                         my_scrollView.fullScroll(ScrollView.FOCUS_UP);
                     }
 
@@ -270,7 +277,7 @@ public class ChooseVideoFragment extends Fragment implements View.OnTouchListene
             });
 
        placevideo(videoInfos.get(0).getVideoPath());//播放视频
-            mPlayView.setVisibility(View.INVISIBLE);
+//            mPlayView.setVisibility(View.INVISIBLE);
         }else {
             Toast.makeText(getContext(), "您的手机没有视频可获取喔", Toast.LENGTH_SHORT).show();
         }
@@ -282,13 +289,11 @@ public class ChooseVideoFragment extends Fragment implements View.OnTouchListene
 //        placevideo(videoInfos.get(0).getVideoPath());//播放视频
 //    }
 
-
     public void placevideo(String s) {
         //设置视频路径
         mvv.setVideoURI(Uri.parse(s));
         //开始播放视频
         mvv.start();
-
     }
 
     public boolean onTouch(MotionEvent event) {
@@ -329,22 +334,22 @@ public class ChooseVideoFragment extends Fragment implements View.OnTouchListene
 
     private void onClickVideoPlayPause(String s) {
         //如果一进来还没有点击播放过(或者点击下一步之后)，那么点击播放第一个，
-        icon_video_thumbnail.setVisibility(View.INVISIBLE);
+//        icon_video_thumbnail.setVisibility(View.INVISIBLE);
         if (isFirstPlay) {
             //设置视频路径
             mvv.setVideoURI(Uri.parse(s));
             //开始播放视频
             mvv.start();
-            mPlayView.setVisibility(View.INVISIBLE);
+//            mPlayView.setVisibility(View.INVISIBLE);
             isFirstPlay = false;  //只要播放过，再点击就走else
         } else {
 
             if (mvv.isPlaying()) {
-                mPlayView.setVisibility(View.VISIBLE);
+//                mPlayView.setVisibility(View.VISIBLE);
                 mMessageHandler.removeMessages(SHOW_PROGRESS);
                 mvv.pause();
             } else {
-                mPlayView.setVisibility(View.INVISIBLE);
+//                mPlayView.setVisibility(View.INVISIBLE);
 
 //            if (mResetSeekBar) {
 //                mResetSeekBar = false;

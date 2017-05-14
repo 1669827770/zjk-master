@@ -88,7 +88,9 @@ public class DaShenActivity extends Activity {
             }
         });
 
-
+/**
+ * 视频主界面
+ */
         findViewById(R.id.btn_video).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
