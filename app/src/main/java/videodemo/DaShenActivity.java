@@ -8,6 +8,7 @@ import android.widget.ScrollView;
 
 import activity.SViewOrRviewBattleActivity;
 import activity.video.ChoosePhotosActivity;
+import activity.video.DownParallaxActivity;
 import dialog.AddrDialog2;
 import activity.GlideActivity;
 import activity.MoveImageviewActivity;
@@ -167,6 +168,18 @@ public class DaShenActivity extends Activity {
                 startActivity(new Intent(DaShenActivity.this, GlideActivity.class));
             }
         });
+
+
+        findViewById(R.id.btn_pull_down_parallax).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DaShenActivity.this,DownParallaxActivity.class));
+            }
+        });
+
+
+
+
 
 
 

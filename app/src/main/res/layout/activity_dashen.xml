@@ -140,6 +140,22 @@
         android:text="swiperefreshlayout的简单使用"/>
 
 
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/btn_Observermodel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="观察者模式的使用"/>
+
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/btn_pull_down_parallax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下拉视差动画"/>
+
+
 
         </LinearLayout>
 
