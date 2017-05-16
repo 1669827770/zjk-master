@@ -92,6 +92,13 @@
         android:layout_height="wrap_content"
         android:text="高度可变的recycleview"/>
 
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/btn_pulltorefreshListView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pulltorefreshListView"/>
+
 
 
     <Button

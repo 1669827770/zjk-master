@@ -54,7 +54,11 @@
             android:screenOrientation="portrait">
         </activity>
         <activity android:name="activity.LoopViewpagerActivity"
-            android:screenOrientation="portrait"></activity>
+            ></activity>
+<activity
+    android:name="activity.PulltorefreshListViewActivity"
+    android:screenOrientation="portrait"></activity>
+
 
     </application>
 

@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ScrollView;
 
 import activity.LoopViewpagerActivity;
+import activity.PulltorefreshListViewActivity;
 import activity.SViewOrRviewBattleActivity;
 import activity.video.ChoosePhotosActivity;
 import activity.video.DownParallaxActivity;
@@ -131,6 +132,16 @@ public class DaShenActivity extends Activity {
                 startActivity(new Intent(DaShenActivity.this, RecycleViewActivity.class));
             }
         });
+
+        findViewById(R.id.btn_pulltorefreshListView).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DaShenActivity.this, PulltorefreshListViewActivity.class));
+            }
+        });
+
+
+
 
 
         findViewById(R.id.btn__viewpager).setOnClickListener(new View.OnClickListener() {
