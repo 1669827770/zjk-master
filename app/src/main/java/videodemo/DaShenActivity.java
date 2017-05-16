@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ScrollView;
 
+import activity.LoopViewpagerActivity;
 import activity.SViewOrRviewBattleActivity;
 import activity.video.ChoosePhotosActivity;
 import activity.video.DownParallaxActivity;
@@ -138,6 +139,16 @@ public class DaShenActivity extends Activity {
                 startActivity(new Intent(DaShenActivity.this, ViewpagerActivity.class));
             }
         });
+
+        findViewById(R.id.btn__loopviewpager).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DaShenActivity.this, LoopViewpagerActivity.class));
+            }
+        });
+
+
+
 
 
         findViewById(R.id.btn_glide).setOnClickListener(new View.OnClickListener() {
