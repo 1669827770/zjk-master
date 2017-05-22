@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/listview_background"
+    android:divider="@android:color/darker_gray"
+    android:dividerHeight="0.5dp"
+    >
+    <!-- divider : 如果使用颜色作为分割线，必须设置分割线的高度 
+         dividerHeight : 设置分割线的高度
+    -->
+
+</ListView>

@@ -4,11 +4,15 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ScrollView;
+
+import activity.TransparencyToolbarActivity;
 
 import activity.LoopViewpagerActivity;
+import activity.PoupwindowActivity;
 import activity.PulltorefreshListViewActivity;
 import activity.SViewOrRviewBattleActivity;
+import activity.eventbus.EventBusActivity;
+import activity.eventbus.eventBus2.tryeventbus2.FirstActivity;
 import activity.video.ChoosePhotosActivity;
 import activity.video.DownParallaxActivity;
 import dialog.AddrDialog2;
@@ -34,37 +38,23 @@ public class DaShenActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_dashen);
-/**
- *移动的图片
- */
-        findViewById(R.id.move_imageview).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
 
-                 startActivity(new Intent(getApplicationContext(), MoveImageviewActivity.class));
-            }
-        });
 
 /**
- * 移动的小球
+ *自定义控件
  */
-        findViewById(R.id.move_view).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.custom_view).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), MoveViewActivity.class));
+
+
+                startActivity(new Intent(getApplicationContext(), CustomViewActivity.class));
             }
         });
 
-        /**
-         * 控件移动
-         */
-        findViewById(R.id.weiget_move).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), WeigetMoveActivity.class));
-            }
-        });
+
+
 
 /**
  * 圆角Dialog,背景是圆角的shape,并从下到上弹出，从上到下消失
@@ -101,13 +91,16 @@ public class DaShenActivity extends Activity {
             }
         });
 
-
+/**
+ *首页倒计时
+ */
         findViewById(R.id.btn_count_down).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(DaShenActivity.this, WelcomeActivity.class));
             }
         });
+
 
         findViewById(R.id.btn_anim_compress).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -140,6 +133,13 @@ public class DaShenActivity extends Activity {
             }
         });
 
+
+        findViewById(R.id.btn_poupwindow).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DaShenActivity.this, PoupwindowActivity.class));
+            }
+        });
 
 
 
@@ -200,6 +200,56 @@ public class DaShenActivity extends Activity {
         });
 
 
+        findViewById(R.id.btn_eventbus).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DaShenActivity.this,EventBusActivity.class));
+            }
+        });
+
+        findViewById(R.id.btn_eventbus2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DaShenActivity.this,FirstActivity.class));
+            }
+        });
+
+
+        findViewById(R.id.btn_rxjava).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DaShenActivity.this,EventBusActivity.class));
+            }
+        });
+
+
+        findViewById(R.id.btn_rxjava).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DaShenActivity.this,EventBusActivity.class));
+            }
+        });
+
+
+        findViewById(R.id.btn_transparency_toolbar).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DaShenActivity.this, TransparencyToolbarActivity.class));
+            }
+        });
+        findViewById(R.id.btn_Immersive_statusbar).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DaShenActivity.this, TransparencyToolbarActivity.class));
+            }
+        });
+
+        findViewById(R.id.btn_moblesalf).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DaShenActivity.this,EventBusActivity.class));
+            }
+        });
 
 
 
@@ -217,5 +267,16 @@ public class DaShenActivity extends Activity {
 
 
 
+
+    }
+
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        // 获取当前进程的id
+        int pid = android.os.Process.myPid();
+        // 这个方法只能用于自杀操作
+        android.os.Process.killProcess(pid);
     }
 }

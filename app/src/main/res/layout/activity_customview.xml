@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/move_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="可移动的图片"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/move_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="可移动的View"/>
+
+    <Button
+        android:id="@+id/weiget_move"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="安卓控件移动"/>
+
+    <Button
+        android:id="@+id/Custom_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom_title"/>
+
+
+
+</LinearLayout>

@@ -13,24 +13,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/move_imageview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="可移动的图片"/>
 
-    <Button
-        android:textAllCaps="false"
-        android:id="@+id/move_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="可移动的View"/>
+            <Button
+                android:id="@+id/custom_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义控件"/>
 
-    <Button
-        android:id="@+id/weiget_move"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="安卓控件移动"/>
+
 
     <Button
         android:id="@+id/rounded_rectangle_dialog"
@@ -49,7 +39,7 @@
         android:id="@+id/btn_count_down"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Utils"/>
+        android:text="首页倒计时"/>
 
     <Button
         android:id="@+id/btn_anim_compress"
@@ -99,7 +89,12 @@
                 android:layout_height="wrap_content"
                 android:text="pulltorefreshListView"/>
 
-
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/btn_poupwindow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="poupwindow"/>
 
     <Button
         android:textAllCaps="false"
@@ -159,7 +154,7 @@
                 android:id="@+id/btn_Observermodel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="观察者模式的使用"/>
+                android:text="2种观察者模式的使用"/>
 
 
             <Button
@@ -185,6 +180,56 @@
                 android:text="7.0权限"/>
 
 
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/btn_eventbus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EventBus"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/btn_eventbus2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EventBus2"/>
+
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/btn_mvp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MVP"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/btn_rxjava"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RXjava"/>
+
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/btn_transparency_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="APP顶部的toolbar位置的滑动透明变化"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/btn_Immersive_statusbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="沉浸式状态栏"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/btn_moblesalf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机卫士"/>
 
         </LinearLayout>
 

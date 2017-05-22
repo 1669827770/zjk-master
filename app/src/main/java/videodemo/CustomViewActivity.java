@@ -1,0 +1,70 @@
+package videodemo;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.LayoutRes;
+import android.support.annotation.Nullable;
+import android.view.View;
+
+import activity.CustomTitleActivity;
+import activity.MoveImageviewActivity;
+import activity.MoveViewActivity;
+import activity.WeigetMoveActivity;
+
+/**
+ * Created by admin on 2017-05-22.
+ */
+
+public   class CustomViewActivity extends Activity {
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_customview);
+
+        /**
+         *移动的图片
+         */
+        findViewById(R.id.move_imageview).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                startActivity(new Intent(getApplicationContext(), MoveImageviewActivity.class));
+            }
+        });
+
+/**
+ * 移动的小球
+ */
+        findViewById(R.id.move_view).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), MoveViewActivity.class));
+            }
+        });
+
+        /**
+         * 控件移动
+         */
+        findViewById(R.id.weiget_move).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), WeigetMoveActivity.class));
+            }
+        });
+
+        findViewById(R.id.Custom_title).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), CustomTitleActivity.class));
+            }
+        });
+
+
+
+    }
+
+    }
+
