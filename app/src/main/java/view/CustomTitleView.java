@@ -1,9 +1,5 @@
 package view;
 
-import java.util.HashSet;
-import java.util.Random;
-import java.util.Set;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -14,26 +10,30 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
 
+import java.util.HashSet;
+import java.util.Random;
+import java.util.Set;
+
 import videodemo.R;
 
 
 public class CustomTitleView extends View
 {
 	/**
-	 * ÎÄ±¾
+	 * æ–‡æœ¬
 	 */
 	private String mTitleText;
 	/**
-	 * ÎÄ±¾µÄÑÕÉ«
+	 * æ–‡æœ¬çš„é¢œè‰²
 	 */
 	private int mTitleTextColor;
 	/**
-	 * ÎÄ±¾µÄ´óĞ¡
+	 * æ–‡æœ¬çš„å¤§å°
 	 */
 	private int mTitleTextSize;
 
 	/**
-	 * »æÖÆÊ±¿ØÖÆÎÄ±¾»æÖÆµÄ·¶Î§
+	 * ç»˜åˆ¶æ—¶æ§åˆ¶æ–‡æœ¬ç»˜åˆ¶çš„èŒƒå›´
 	 */
 	private Rect mBound;
 	private Paint mPaint;
@@ -49,8 +49,8 @@ public class CustomTitleView extends View
 	}
 
 	/**
-	 * »ñµÃÎÒ×Ô¶¨ÒåµÄÑùÊ½ÊôĞÔ
-	 * 
+	 * è·å¾—æˆ‘è‡ªå®šä¹‰çš„æ ·å¼å±æ€§
+	 *
 	 * @param context
 	 * @param attrs
 	 * @param defStyle
@@ -59,7 +59,7 @@ public class CustomTitleView extends View
 	{
 		super(context, attrs, defStyle);
 		/**
-		 * »ñµÃÎÒÃÇËù¶¨ÒåµÄ×Ô¶¨ÒåÑùÊ½ÊôĞÔ
+		 * è·å¾—æˆ‘ä»¬æ‰€å®šä¹‰çš„è‡ªå®šä¹‰æ ·å¼å±æ€§
 		 */
 		TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.CustomTitleView, defStyle, 0);
 		int n = a.getIndexCount();
@@ -72,11 +72,11 @@ public class CustomTitleView extends View
 				mTitleText = a.getString(attr);
 				break;
 			case R.styleable.CustomTitleView_titleTextColor:
-				// Ä¬ÈÏÑÕÉ«ÉèÖÃÎªºÚÉ«
+				//é»˜è®¤é¢œè‰²è®¾ç½®ä¸ºé»‘è‰²
 				mTitleTextColor = a.getColor(attr, Color.BLACK);
 				break;
 			case R.styleable.CustomTitleView_titleTextSize:
-				// Ä¬ÈÏÉèÖÃÎª16sp£¬TypeValueÒ²¿ÉÒÔ°Ñsp×ª»¯Îªpx
+				// é»˜è®¤è®¾ç½®ä¸º16spï¼ŒTypeValueä¹Ÿå¯ä»¥æŠŠspè½¬åŒ–ä¸ºpx
 				mTitleTextSize = a.getDimensionPixelSize(attr, (int) TypedValue.applyDimension(
 						TypedValue.COMPLEX_UNIT_SP, 16, getResources().getDisplayMetrics()));
 				break;
@@ -87,7 +87,7 @@ public class CustomTitleView extends View
 		a.recycle();
 
 		/**
-		 * »ñµÃ»æÖÆÎÄ±¾µÄ¿íºÍ¸ß
+		 * è·å¾—ç»˜åˆ¶æ–‡æœ¬çš„å®½å’Œé«˜
 		 */
 		mPaint = new Paint();
 		mPaint.setTextSize(mTitleTextSize);
@@ -135,31 +135,31 @@ public class CustomTitleView extends View
 		int height = 0;
 
 		/**
-		 * ÉèÖÃ¿í¶È
+		 *  è®¾ç½®å®½åº¦
 		 */
 		int specMode = MeasureSpec.getMode(widthMeasureSpec);
 		int specSize = MeasureSpec.getSize(widthMeasureSpec);
 		switch (specMode)
 		{
-		case MeasureSpec.EXACTLY:// Ã÷È·Ö¸¶¨ÁË
+		case MeasureSpec.EXACTLY:// ï¿½ï¿½È·Ö¸ï¿½ï¿½ï¿½ï¿½
 			width = getPaddingLeft() + getPaddingRight() + specSize;
 			break;
-		case MeasureSpec.AT_MOST:// Ò»°ãÎªWARP_CONTENT
+		case MeasureSpec.AT_MOST:// Ò»ï¿½ï¿½ÎªWARP_CONTENT
 			width = getPaddingLeft() + getPaddingRight() + mBound.width();
 			break;
 		}
 
 		/**
-		 * ÉèÖÃ¸ß¶È
+		 * ï¿½ï¿½ï¿½Ã¸ß¶ï¿½
 		 */
 		specMode = MeasureSpec.getMode(heightMeasureSpec);
 		specSize = MeasureSpec.getSize(heightMeasureSpec);
 		switch (specMode)
 		{
-		case MeasureSpec.EXACTLY:// Ã÷È·Ö¸¶¨ÁË
+		case MeasureSpec.EXACTLY://æ˜ç¡®æŒ‡å®šäº†
 			height = getPaddingTop() + getPaddingBottom() + specSize;
 			break;
-		case MeasureSpec.AT_MOST:// Ò»°ãÎªWARP_CONTENT
+		case MeasureSpec.AT_MOST:// ä¸€èˆ¬ä¸ºWARP_CONTENT
 			height = getPaddingTop() + getPaddingBottom() + mBound.height();
 			break;
 		}

@@ -102,6 +102,13 @@
             android:screenOrientation="portrait"></activity>
 
 
+        <activity android:name="activity.FocussActivity">
+
+        </activity>
+
+        <activity android:name="activity.MobleSalfActivity"></activity>
+
+
     </application>
 
 </manifest>

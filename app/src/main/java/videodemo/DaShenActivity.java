@@ -5,26 +5,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import activity.TransparencyToolbarActivity;
-
-import activity.LoopViewpagerActivity;
+import activity.GlideActivity;
+import activity.MobleSalfActivity;
 import activity.PoupwindowActivity;
 import activity.PulltorefreshListViewActivity;
+import activity.RecycleViewActivity;
+import activity.RulerActivity;
 import activity.SViewOrRviewBattleActivity;
+import activity.TransparencyToolbarActivity;
+import activity.WelcomeActivity;
 import activity.eventbus.EventBusActivity;
 import activity.eventbus.eventBus2.tryeventbus2.FirstActivity;
 import activity.video.ChoosePhotosActivity;
 import activity.video.DownParallaxActivity;
 import dialog.AddrDialog2;
-import activity.GlideActivity;
-import activity.MoveImageviewActivity;
-import activity.MoveViewActivity;
-import activity.RecycleViewActivity;
-import activity.RulerActivity;
-
-import activity.ViewpagerActivity;
-import activity.WeigetMoveActivity;
-import activity.WelcomeActivity;
 
 
 /**
@@ -144,23 +138,6 @@ public class DaShenActivity extends Activity {
 
 
 
-        findViewById(R.id.btn__viewpager).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(DaShenActivity.this, ViewpagerActivity.class));
-            }
-        });
-
-        findViewById(R.id.btn__loopviewpager).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(DaShenActivity.this, LoopViewpagerActivity.class));
-            }
-        });
-
-
-
-
 
         findViewById(R.id.btn_glide).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -247,9 +224,17 @@ public class DaShenActivity extends Activity {
         findViewById(R.id.btn_moblesalf).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(DaShenActivity.this,EventBusActivity.class));
+                startActivity(new Intent(DaShenActivity.this, MobleSalfActivity.class));
             }
         });
+
+        findViewById(R.id.btn_common_functions).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DaShenActivity.this, CommonFunctionsActivity.class));
+            }
+        });
+
 
 
 

@@ -3,13 +3,14 @@ package videodemo;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.view.View;
 
 import activity.CustomTitleActivity;
+import activity.LoopViewpagerActivity;
 import activity.MoveImageviewActivity;
 import activity.MoveViewActivity;
+import activity.ViewpagerActivity;
 import activity.WeigetMoveActivity;
 
 /**
@@ -59,6 +60,22 @@ public   class CustomViewActivity extends Activity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), CustomTitleActivity.class));
+            }
+        });
+
+
+
+        findViewById(R.id.btn__viewpager).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), ViewpagerActivity.class));
+            }
+        });
+
+        findViewById(R.id.btn__loopviewpager).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), LoopViewpagerActivity.class));
             }
         });
 
