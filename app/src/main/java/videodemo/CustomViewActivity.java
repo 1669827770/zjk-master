@@ -10,6 +10,9 @@ import activity.CustomTitleActivity;
 import activity.LoopViewpagerActivity;
 import activity.MoveImageviewActivity;
 import activity.MoveViewActivity;
+import activity.PoupwindowActivity;
+import activity.PulltorefreshListViewActivity;
+import activity.RulerActivity;
 import activity.ViewpagerActivity;
 import activity.WeigetMoveActivity;
 
@@ -78,6 +81,30 @@ public   class CustomViewActivity extends Activity {
                 startActivity(new Intent(getApplicationContext(), LoopViewpagerActivity.class));
             }
         });
+
+        findViewById(R.id.btn_pulltorefreshListView).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), PulltorefreshListViewActivity.class));
+            }
+        });
+
+
+        findViewById(R.id.btn_poupwindow).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), PoupwindowActivity.class));
+            }
+        });
+
+
+        findViewById(R.id.btn_ruler).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), RulerActivity.class));
+            }
+        });
+
 
 
 

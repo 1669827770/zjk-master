@@ -52,5 +52,10 @@
     <dimen name="dp130">130dp</dimen>
     <dimen name="dp85">85dp</dimen>
     <dimen name="dp15">15dp</dimen>
+    <dimen name="dp40">40dp</dimen>
+    <dimen name="dp70">70dp</dimen>
+    <dimen name="dp18">18dp</dimen>
+    <dimen name="dp110">110dp</dimen>
+    <dimen name="dp20">20dp</dimen>
 
 </resources>

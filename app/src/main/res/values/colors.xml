@@ -13,4 +13,6 @@
     <!-- 背景色 -->
     <color name="bg_color">#EFEFF4</color>
     <color name="bg_deep_blue">#262743</color>
+
+
 </resources>

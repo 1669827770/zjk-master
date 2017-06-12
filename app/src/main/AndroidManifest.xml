@@ -102,11 +102,19 @@
             android:screenOrientation="portrait"></activity>
 
 
-        <activity android:name="activity.FocussActivity">
-
-        </activity>
+        <activity android:name="activity.FocussActivity"></activity>
 
         <activity android:name="activity.MobleSalfActivity"></activity>
+
+        <activity android:name="activity.StatusbariconActivity"></activity>
+
+        <activity android:name="activity.GoogleMarketActivity"></activity>
+
+        <activity android:name=".NewsActivity"></activity>
+
+        <activity android:name="activity.WelcomeAnimActivity"></activity>
+
+        <activity android:name=".MainInterfaceActivity"></activity>
 
 
     </application>

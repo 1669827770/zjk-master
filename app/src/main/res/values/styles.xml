@@ -57,4 +57,20 @@
     <style name="maskDialog" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         <item name="android:windowBackground">@color/colorAccent</item>
     </style>
+
+
+    <style name="bottom_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@drawable/bottom_text_selector</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
 </resources>

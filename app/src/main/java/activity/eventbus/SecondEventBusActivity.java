@@ -13,7 +13,7 @@ import videodemo.R;
  * Created by admin on 2017-05-17.
  */
 
-class SecondEventBusActivity extends Activity {
+public class SecondEventBusActivity extends Activity {
     private Button btn_FirstEvent;
 
     @Override
