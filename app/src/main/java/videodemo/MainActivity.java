@@ -10,13 +10,25 @@ import android.view.View;
  * Created by zhush on 2016/11/11
 
  */
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        if (Build.VERSION.SDK_INT >= 23) {
+//            if (!Settings.canDrawOverlays(MainActivity.this)) {
+//                Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+//                        Uri.parse("package:" + getPackageName()));
+//                startActivityForResult(intent, 10);
+//            } else {
+//                AddrToast at = new AddrToast(getApplicationContext());
+//                at.show();
+//            }
+//        }
+
 
         findViewById(R.id.button4).setOnLongClickListener(new View.OnLongClickListener() {
             @Override
@@ -25,7 +37,23 @@ public class MainActivity extends AppCompatActivity{
                 return false;
             }
         });
-
-
     }
+
+
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        if (requestCode == 10) {
+//            if (Build.VERSION.SDK_INT >= 23) {
+//                if (!Settings.canDrawOverlays(this)) {
+//                    Toast.makeText(getApplication(), "权限授予失败，无法开启悬浮窗", Toast.LENGTH_SHORT).show();
+//                } else {
+////                    Toast.makeText(TestFloatWinActivity.this, "权限授予成功！", Toast.LENGTH_SHORT).show();
+//                    // SYSTEM_ALERT_WINDOW permission not granted...
+//                    AddrToast at = new AddrToast(getApplicationContext());
+//                    at.show();
+//                }
+//
+//            }
+//        }
+//    }
 }

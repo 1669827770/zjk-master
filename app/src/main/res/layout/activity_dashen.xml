@@ -34,12 +34,27 @@
                 android:layout_height="wrap_content"
                 android:text="状态栏图标"/>
 
+
+
             <Button
                 android:id="@+id/btn_googlemarket"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="谷歌市场"/>
 
+
+
+            <Button
+                android:id="@+id/no_cancle_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="无法取消的dialog"/>
+
+            <Button
+                android:id="@+id/no_cancle_windowManager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="windowManager"/>
 
     <Button
         android:id="@+id/rounded_rectangle_dialog"
@@ -225,6 +240,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="新闻客户端"/>
+
+
+
 
 
 

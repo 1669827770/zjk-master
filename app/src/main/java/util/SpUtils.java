@@ -46,7 +46,7 @@ public class SpUtils {
 	}
 
 	public static boolean getBooleanParam(Context context, String paramName,
-                                          boolean def) {
+			boolean def) {
 		getSp(context);
 		return sp.getBoolean(paramName, def);
 	}
