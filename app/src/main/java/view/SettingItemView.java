@@ -1,6 +1,7 @@
 package view;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
@@ -8,6 +9,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import videodemo.R;
+
+import static android.provider.ContactsContract.CommonDataKinds.Identity.NAMESPACE;
 
 
 /**
@@ -17,11 +20,12 @@ import videodemo.R;
  * 
  */
 public class SettingItemView extends RelativeLayout {
+//	xmlns:android="http://schemas.android.com/apk/res/android"
+//	private final String NAMESPACE = "http://schemas.android.com/apk/res/com.itheima.mobilesafe88";
 
-	private final String NAMESPACE = "http://schemas.android.com/apk/res/com.itheima.mobilesafe88";
-	private boolean sivIsShowToggle;
-	private int sivBackground;
-	private String sivTilte;
+	int mintBackground ;
+	boolean mIsShowToggle ;
+	String mStringTitle ;
 	private ImageView ivToggle;
 
 	// 用来标记开关是否打开了,false表示关闭,true表示打开
@@ -44,10 +48,20 @@ public class SettingItemView extends RelativeLayout {
 		// 得到boolean类型的属性值
 		// 参1:命名空间
 		// 参2:属性名称
-		sivIsShowToggle = attrs.getAttributeBooleanValue(NAMESPACE, "sivIsShowToggle",
+		//方式1获取属性
+		TypedArray a = context
+				.obtainStyledAttributes(attrs, R.styleable.SettingItemView);
+
+		 mintBackground = a.getInteger(R.styleable.SettingItemView_sivBackground,0);
+		 mIsShowToggle  =a.getBoolean(R.styleable.SettingItemView_sivIsShowToggle,true);
+		mStringTitle  =a.getString(R.styleable.SettingItemView_sivTitle);
+
+		a.recycle(); // 提示大家不要忘了回收资源
+
+	/*	sivIsShowToggle = attrs.getAttributeBooleanValue(NAMESPACE, "sivIsShowToggle",
 				true);
 		sivBackground = attrs.getAttributeIntValue(NAMESPACE, "sivBackground", 0);
-		sivTilte = attrs.getAttributeValue(NAMESPACE, "sivTitle");
+		sivTilte = attrs.getAttributeValue(NAMESPACE, "sivTitle");*/
 
 		// 初始化控件
 		initView();
@@ -85,7 +99,7 @@ public class SettingItemView extends RelativeLayout {
 		ivToggle = (ImageView) view.findViewById(R.id.iv_toggle);
 
 		// 使用给自定义属性赋的值sivIsShowToggle,来控制开关是否显示
-		if (sivIsShowToggle) {
+		if (mIsShowToggle) {
 			// INVISIBLE :不可见 ,GONE:不可见,VISIBLE 可见
 			ivToggle.setVisibility(View.VISIBLE);
 		} else {
@@ -102,10 +116,10 @@ public class SettingItemView extends RelativeLayout {
 		}
 
 		// 显示给自定义属性赋的值sivTilte
-		tvTitle.setText(sivTilte);
+		tvTitle.setText(mStringTitle);
 
 		// 使用自定义属性赋的值sivBackground,来控制控件显示的背景
-		switch (sivBackground) {
+		switch (mintBackground) {
 		case 0: // first
 			setBackgroundResource(R.drawable.selector_siv_first);
 			break;

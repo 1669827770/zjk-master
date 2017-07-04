@@ -11,4 +11,18 @@
         <attr name="titleTextSize" />
     </declare-styleable>
 
+    <declare-styleable name="SettingItemView">
+
+        <attr name="sivBackground" >
+            <enum name="first" value="0"/>
+            <enum name="midlle" value="1" />
+            <enum name="last" value="2" />
+        </attr>
+
+        <attr name="sivIsShowToggle"  format="boolean"/>
+        <attr name="sivTitle"  format="string"/>
+
+
+    </declare-styleable>
+
 </resources>

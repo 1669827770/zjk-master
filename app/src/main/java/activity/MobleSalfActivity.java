@@ -66,6 +66,10 @@ public class MobleSalfActivity extends Activity {
 
                 }else if (text.equals("自定义组合控件")){
                     startActivity(new Intent(getApplicationContext(), CustomCombinationsActivity.class));
+                }else if (text.equals("自定义组合进度条")){
+                    startActivity(new Intent(getApplicationContext(), CustomCombinationsPRogressbarActivity.class));
+                }else if (text.equals("常用电话号码")){
+                    startActivity(new Intent(getApplicationContext(), CommonNumActivity.class));
                 }
             }
         });
@@ -78,6 +82,8 @@ public class MobleSalfActivity extends Activity {
         list.add("选择器");
         list.add("gridview的使用");
         list.add("自定义组合控件");
+        list.add("自定义组合进度条");
+        list.add("常用电话号码");
     }
 
 
