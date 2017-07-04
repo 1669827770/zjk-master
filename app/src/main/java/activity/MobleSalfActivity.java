@@ -64,6 +64,8 @@ public class MobleSalfActivity extends Activity {
 
                 }else if (text.equals("gridview的使用")){
 
+                }else if (text.equals("自定义组合控件")){
+                    startActivity(new Intent(getApplicationContext(), CustomCombinationsActivity.class));
                 }
             }
         });
@@ -75,7 +77,7 @@ public class MobleSalfActivity extends Activity {
         list.add("跑马灯");
         list.add("选择器");
         list.add("gridview的使用");
-
+        list.add("自定义组合控件");
     }
 
 
