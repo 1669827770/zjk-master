@@ -393,10 +393,7 @@ public class DaShenActivity extends Activity {
                     mContext.startActivity(intent);
 
                 }else if (text.equals("Scroview与Recycleviwew显示不全问题")){
-                    Intent intent = new Intent(mContext, StatusbariconActivity.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    mContext.startActivity(intent);
-
+                    startActivity(new Intent(DaShenActivity.this,SViewOrRviewBattleActivity.class));
                 }else if (text.equals("Scroview与Recycleviwew没有惯性问题")){
                     startActivity(new Intent(DaShenActivity.this, SViewOrRviewBattleActivity.class));
 
@@ -406,6 +403,8 @@ public class DaShenActivity extends Activity {
                     mContext.startActivity(intent);
 
                 }else if (text.equals("2种观察者模式的使用")){
+                    startActivity(new Intent(DaShenActivity.this,DownParallaxActivity.class));
+                }else if (text.equals("下拉视差动画")){
                     startActivity(new Intent(DaShenActivity.this,DownParallaxActivity.class));
 
                 }else if (text.equals("6.0权限")){
