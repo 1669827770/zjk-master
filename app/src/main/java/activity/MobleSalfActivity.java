@@ -70,6 +70,8 @@ public class MobleSalfActivity extends Activity {
                     startActivity(new Intent(getApplicationContext(), CustomCombinationsPRogressbarActivity.class));
                 }else if (text.equals("常用电话号码")){
                     startActivity(new Intent(getApplicationContext(), CommonNumActivity.class));
+                }else if (text.equals("帮助ExpandadleList")){
+                    startActivity(new Intent(getApplicationContext(), HelpExpandadleListActivity.class));
                 }
             }
         });
@@ -84,6 +86,7 @@ public class MobleSalfActivity extends Activity {
         list.add("自定义组合控件");
         list.add("自定义组合进度条");
         list.add("常用电话号码");
+        list.add("帮助ExpandadleList");
     }
 
 
@@ -128,6 +131,5 @@ public class MobleSalfActivity extends Activity {
         int color = Color.rgb(red, green, blue);
         return color;
     }
-
 
 }

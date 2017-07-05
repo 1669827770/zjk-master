@@ -58,8 +58,7 @@ public class AnimationActivity extends Activity {
             @Override
             public void onClick(View v) {
                 String text = (String) textView.getText();
-
-                if(text.equals("自定义控件")){
+                if(text.equals("Activity进出动画")){
                     startActivity(new Intent(getApplicationContext(), CustomViewActivity.class));
                 }else if (text.equals("安卓动画")){
                     startActivity(new Intent(getApplicationContext(), AnimationActivity.class));
@@ -76,7 +75,7 @@ public class AnimationActivity extends Activity {
 
     public static ArrayList<String> list = new ArrayList<String>();
     static {
-        list.add("自定义控件");
+        list.add("Activity进出动画");
         list.add("安卓动画");
         list.add("状态栏图标");
 

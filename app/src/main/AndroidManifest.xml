@@ -125,6 +125,7 @@
         <activity android:name="activity.CustomCombinationsActivity"></activity>
         <activity android:name="activity.CustomCombinationsPRogressbarActivity"></activity>
         <activity android:name="activity.OneViewActivity"></activity>
+        <activity android:name="activity.HelpExpandadleListActivity"></activity>
 
 
 

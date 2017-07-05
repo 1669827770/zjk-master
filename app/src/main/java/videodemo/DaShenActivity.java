@@ -19,6 +19,7 @@ import java.util.Random;
 import activity.AnimationActivity;
 import activity.GlideActivity;
 import activity.GoogleMarketActivity;
+import activity.IPCActivity;
 import activity.MobleSalfActivity;
 import activity.RecycleViewActivity;
 import activity.SViewOrRviewBattleActivity;
@@ -387,8 +388,8 @@ public class DaShenActivity extends Activity {
                 }else if (text.equals("图片问题，包括压缩，上传之类")){
                     startActivity(new Intent(DaShenActivity.this, GlideActivity.class));
 
-                }else if (text.equals("Activity进出动画")){
-                    Intent intent = new Intent(mContext, StatusbariconActivity.class);
+                }else if (text.equals("进程间通讯")){
+                    Intent intent = new Intent(mContext, IPCActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     mContext.startActivity(intent);
 
@@ -474,7 +475,7 @@ public class DaShenActivity extends Activity {
         list.add("recycleview使用");
         list.add("高度可变的recycleview");
         list.add("图片问题，包括压缩，上传之类");
-        list.add("Activity进出动画");
+        list.add("进程间通讯");
         list.add("Scroview与Recycleviwew显示不全问题");
         list.add("Scroview与Recycleviwew没有惯性问题");
         list.add("swiperefreshlayout的简单使用");
