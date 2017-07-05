@@ -22,7 +22,6 @@
         android:textSize="25sp" />
 
     <ImageButton
-        android:id="@+id/ib_titlebar_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
@@ -41,7 +40,6 @@
         android:visibility="gone" />
 
     <ImageButton
-        android:id="@+id/ib_titlebar_textsize"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"

@@ -7,15 +7,13 @@
     >
 	<!-- | : 两种效果同时实现 -->
     <ProgressBar
-        android:id="@+id/footer_progressbar"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:indeterminateDrawable="@drawable/progreebar_style"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         />
-    <TextView 
-        android:id="@+id/footer_text"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="加载更多..."

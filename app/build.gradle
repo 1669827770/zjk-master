@@ -21,6 +21,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    //自动命名打包
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                //这里修改apk文件名
+                def debug = "Beta_";
+//                def fileName = debug+"SpeechTabBar_${releaseTime()}_v${defaultConfig.versionName}.apk"
+                def fileName = debug+"zjkmaster恭喜发财_v${defaultConfig.versionName}.apk"
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+
 }
 
 dependencies {

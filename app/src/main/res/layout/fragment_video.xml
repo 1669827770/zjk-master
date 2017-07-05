@@ -28,7 +28,6 @@
                 android:src="@drawable/ic_back" />
 
             <TextView
-                android:id="@+id/tv_top_bar_title"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_centerInParent="true"

@@ -4,14 +4,10 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="panel_black">#25272A</color>
-    <color name="text_blue1">#1173CB</color>
-
 
     <!-- 白色 -->
     <color name="white">#FFFFFFFF</color>
     <!-- 背景色 -->
-    <color name="bg_color">#EFEFF4</color>
     <color name="bg_deep_blue">#262743</color>
 
 
