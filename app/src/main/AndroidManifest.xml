@@ -32,20 +32,34 @@
         </activity>
 
         <activity android:name=".DaShenActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait">
+
+        </activity>
         <activity android:name="activity.MoveImageviewActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait">
+
+        </activity>
         <activity android:name="activity.MoveViewActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait">
+
+        </activity>
         <activity android:name="activity.WeigetMoveActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait">
+
+        </activity>
         <activity android:name="activity.WelcomeActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait">
+
+        </activity>
 
         <activity android:name="activity.RulerActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait">
+
+        </activity>
         <activity android:name="activity.ViewpagerActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait">
+
+        </activity>
         <activity android:name="activity.GlideActivity"
             android:screenOrientation="portrait">
 
@@ -66,10 +80,14 @@
             android:screenOrientation="portrait">
         </activity>
         <activity android:name="activity.LoopViewpagerActivity"
-            ></activity>
+            >
+
+        </activity>
 <activity
     android:name="activity.PulltorefreshListViewActivity"
-    android:screenOrientation="portrait"></activity>
+    android:screenOrientation="portrait">
+
+</activity>
         <activity android:name="activity.PoupwindowActivity"
             android:screenOrientation="portrait">
 
@@ -100,32 +118,68 @@
         </activity>
 
         <activity android:name=".CustomViewActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait">
+
+        </activity>
 
         <activity android:name="activity.CustomTitleActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait">
+
+        </activity>
 
 
-        <activity android:name="activity.FocussActivity"></activity>
+        <activity android:name="activity.FocussActivity">
 
-        <activity android:name="activity.MobleSalfActivity"></activity>
+        </activity>
 
-        <activity android:name="activity.StatusbariconActivity"></activity>
+        <activity android:name="activity.MobleSalfActivity">
 
-        <activity android:name="activity.GoogleMarketActivity"></activity>
+        </activity>
 
-        <activity android:name=".NewsActivity"></activity>
+        <activity android:name="activity.StatusbariconActivity">
 
-        <activity android:name="activity.WelcomeAnimActivity"></activity>
+        </activity>
 
-        <activity android:name=".MainInterfaceActivity"></activity>
+        <activity android:name="activity.GoogleMarketActivity">
 
-        <activity android:name="activity.TestActivity"></activity>
-        <activity android:name="activity.AnimationActivity"></activity>
-        <activity android:name="activity.CustomCombinationsActivity"></activity>
-        <activity android:name="activity.CustomCombinationsPRogressbarActivity"></activity>
-        <activity android:name="activity.OneViewActivity"></activity>
-        <activity android:name="activity.HelpExpandadleListActivity"></activity>
+        </activity>
+
+        <activity android:name=".NewsActivity">
+
+        </activity>
+
+        <activity android:name="activity.WelcomeAnimActivity">
+
+        </activity>
+
+        <activity android:name=".MainInterfaceActivity">
+
+        </activity>
+
+        <activity android:name="activity.TestActivity">
+
+        </activity>
+        <activity android:name="activity.AnimationActivity">
+
+        </activity>
+        <activity android:name="activity.CustomCombinationsActivity">
+
+        </activity>
+        <activity android:name="activity.CustomCombinationsPRogressbarActivity">
+
+        </activity>
+        <activity android:name="activity.OneViewActivity">
+
+        </activity>
+        <activity android:name="activity.HelpExpandadleListActivity">
+
+        </activity>
+        <activity android:name="activity.PropertyAnimationActivity">
+
+        </activity>
+        <activity android:name="activity.IPCActivity">
+
+        </activity>
 
 
 

@@ -12,7 +12,7 @@ import view.SettingItemView;
  * Created by admin on 2017-07-03.
  */
 
-class CustomCombinationsActivity extends Activity implements View.OnClickListener {
+public class CustomCombinationsActivity extends Activity implements View.OnClickListener {
 
     private SettingItemView mSivAutoUpdate;
 

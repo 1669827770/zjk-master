@@ -11,7 +11,7 @@ import view.ProgDescView;
  * Created by admin on 2017-07-04.
  */
 
-class CustomCombinationsPRogressbarActivity extends Activity {
+public class CustomCombinationsPRogressbarActivity extends Activity {
 
 
     private ProgDescView mPdvPmPnum;

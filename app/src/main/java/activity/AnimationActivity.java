@@ -17,7 +17,6 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Random;
 
-import videodemo.CustomViewActivity;
 import view.FlowLayout;
 
 /**
@@ -58,15 +57,15 @@ public class AnimationActivity extends Activity {
             @Override
             public void onClick(View v) {
                 String text = (String) textView.getText();
-                if(text.equals("Activity进出动画")){
-                    startActivity(new Intent(getApplicationContext(), CustomViewActivity.class));
-                }else if (text.equals("安卓动画")){
+                if (text.equals("Tweened Animation补间动画")){
                     startActivity(new Intent(getApplicationContext(), AnimationActivity.class));
-                }else if (text.equals("状态栏图标")){
+                }else if (text.equals("Frame Animation帧动画")){
                     startActivity(new Intent(getApplicationContext(), StatusbariconActivity.class));
-
+                }else if (text.equals("Property Animation属性动画")){
+                    startActivity(new Intent(getApplicationContext(), PropertyAnimationActivity.class));
+                }else if (text.equals("实现Activity跳转动画的五种方式")){
+                    startActivity(new Intent(getApplicationContext(), StatusbariconActivity.class));
                 }
-
             }
         });
         return textView;
@@ -75,9 +74,12 @@ public class AnimationActivity extends Activity {
 
     public static ArrayList<String> list = new ArrayList<String>();
     static {
-        list.add("Activity进出动画");
-        list.add("安卓动画");
-        list.add("状态栏图标");
+
+        list.add("Tweened Animation补间动画");
+        list.add("Frame Animation帧动画");
+        list.add("Property Animation属性动画");
+        list.add("实现Activity跳转动画的五种方式");
+
 
     }
 
