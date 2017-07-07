@@ -25,4 +25,10 @@
 
     </declare-styleable>
 
+    <declare-styleable name="ToggleButtonImageView">
+        <attr name="backgrounicon" format="reference" />
+        <attr name="icon" format="reference" />
+        <attr name="openstate" format="boolean" />
+    </declare-styleable>
+
 </resources>

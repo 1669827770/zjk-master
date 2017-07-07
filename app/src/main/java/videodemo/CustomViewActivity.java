@@ -17,11 +17,14 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Random;
 
+import activity.CustomCombinationsActivity;
+import activity.CustomCombinationsPRogressbarActivity;
 import activity.CustomTitleActivity;
 import activity.LoopViewpagerActivity;
 import activity.MoveImageviewActivity;
 import activity.MoveViewActivity;
 import activity.OneViewActivity;
+import activity.PieChartActivity;
 import activity.PoupwindowActivity;
 import activity.PulltorefreshListViewActivity;
 import activity.RulerActivity;
@@ -131,9 +134,6 @@ public   class CustomViewActivity extends Activity {
 //            }
 //        });
 
-
-
-
     }
 
 
@@ -175,6 +175,14 @@ public   class CustomViewActivity extends Activity {
                     startActivity(new Intent(getApplicationContext(), OneViewActivity.class));
                 }else if (text.equals("另一个View,智慧，城市")){
                     startActivity(new Intent(getApplicationContext(), OtherOneViewActivity.class));
+                }else if (text.equals("饼状图")){
+                    startActivity(new Intent(getApplicationContext(), PieChartActivity.class));
+                }else if (text.equals("自定义开关togglebutton")){
+                    startActivity(new Intent(getApplicationContext(), ToggleButtonViewActivity.class));
+                }else if (text.equals("自定义组合控件")){
+                    startActivity(new Intent(getApplicationContext(), CustomCombinationsActivity.class));
+                }else if (text.equals("自定义组合进度条")){
+                    startActivity(new Intent(getApplicationContext(), CustomCombinationsPRogressbarActivity.class));
                 }
             }
         });
@@ -187,13 +195,17 @@ public   class CustomViewActivity extends Activity {
         list.add("可移动的图片");
         list.add("可移动的View");
         list.add("安卓控件移动");
-        list.add("Custom_title");
+        list.add("另一个View,智慧，城市");
         list.add("特效的viewpager");
         list.add("无限循环viewpager");
         list.add("pulltorefreshListView");
         list.add("poupwindow");
         list.add("尺子");
         list.add("一个View,智慧，城市");
+        list.add("饼状图");
+        list.add("自定义开关togglebutton");
+        list.add("自定义组合控件");
+        list.add("自定义组合进度条");
 
     }
 

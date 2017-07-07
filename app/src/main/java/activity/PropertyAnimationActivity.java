@@ -18,6 +18,11 @@ import android.widget.ImageView;
 import videodemo.R;
 import view.StepArcView;
 
+/**
+ *
+ linglongxin24/AnimationDemo    https://github.com/linglongxin24/AnimationDemo
+
+ */
 public class PropertyAnimationActivity extends AppCompatActivity {
     private ImageView iv;
     private StepArcView sv;
@@ -52,6 +57,18 @@ public class PropertyAnimationActivity extends AppCompatActivity {
                 /**同时播放两个动画**/
                 ObjectAnimator.ofPropertyValuesHolder(iv, objectAnimatorScaleX, objectAnimatorScaleY).setDuration(1000).start();
 
+                break;
+
+            case R.id.animation_cencle_scaleX:
+                //沿x轴方向缩放
+                //把mImg 沿着x轴方向，从原始大小，扩大到原来的一倍，然后再返回原始大小，动画用时3秒
+                ObjectAnimator.ofFloat(iv, "scaleX", 1, 2,2,1).setDuration(3000).start();
+                break;
+
+            case R.id.animation_cencle_scaleY:
+                //沿y轴方向缩放
+                //把mImg 沿着y轴方向，从原始大小，扩大到原来的一倍，然后再返回原始大小，动画用时3秒
+                ObjectAnimator.ofFloat(iv, "scaleY", 1, 2,2,1).setDuration(3000).start();
                 break;
             case R.id.animation_rotate://旋转动画
                 ObjectAnimator objectAnimatorScale = ObjectAnimator.ofFloat(iv, "rotation", 0f, 360f);

@@ -58,7 +58,7 @@ public class AnimationActivity extends Activity {
             public void onClick(View v) {
                 String text = (String) textView.getText();
                 if (text.equals("Tweened Animation补间动画")){
-                    startActivity(new Intent(getApplicationContext(), AnimationActivity.class));
+                    startActivity(new Intent(getApplicationContext(), TweenedAnimationActivity.class));
                 }else if (text.equals("Frame Animation帧动画")){
                     startActivity(new Intent(getApplicationContext(), StatusbariconActivity.class));
                 }else if (text.equals("Property Animation属性动画")){
