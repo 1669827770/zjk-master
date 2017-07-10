@@ -26,7 +26,7 @@ public class NoCancleDialog extends Dialog {
     public static final int FLAG_HOMEKEY_DISPATCHED = 0x80000000; //需要自己定义标志
 
     public NoCancleDialog(Context context) {
-        super(context, R.style.AddrDialogStyle);
+        super(context, R.style.AddrDialogStyleBottom);
         getWindow().setGravity(Gravity.BOTTOM);
         WindowManager m = getWindow().getWindowManager();
         Display d = m.getDefaultDisplay();

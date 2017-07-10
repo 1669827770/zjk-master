@@ -82,6 +82,15 @@ public class Utils {
         mToast.show();
     }
 
+    private static Toast toast;
+    public static void showToast(Context context,String text){
+        if (toast==null){
+            toast=Toast.makeText(context,"",Toast.LENGTH_SHORT);
+        }
+        toast.setText(text);
+        toast.show();
+    }
+
     /**
      * 获取缓存目录
      *

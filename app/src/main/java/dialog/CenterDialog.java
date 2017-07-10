@@ -3,12 +3,8 @@ package dialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
-import android.view.Display;
-import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
-import android.view.WindowManager.LayoutParams;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
@@ -18,7 +14,7 @@ import android.widget.TextView;
 import videodemo.R;
 
 
-public class AddrDialog2 extends Dialog {
+public class CenterDialog extends Dialog {
 
     private ListView lvStyle1;
     TextView tv_cancel;
@@ -28,29 +24,8 @@ public class AddrDialog2 extends Dialog {
     private static final String[] mTitles = new String[]{"半透明", "活力橙", "卫士蓝", "金属灰",
             "苹果绿"};
 
-    public AddrDialog2(Context context) {
-
-        super(context, R.style.AddrDialogStyle);
-
-
-        getWindow().setGravity(Gravity.BOTTOM);
-        WindowManager m = getWindow().getWindowManager();
-        Display d = m.getDefaultDisplay();
-        LayoutParams p = getWindow().getAttributes();
-        p.width = d.getWidth();
-        getWindow().setAttributes(p);
-    }
-
-    public AddrDialog2(Context context, int style) {
-
+    public CenterDialog(Context context, int style) {
         super(context, style);
-//        getWindow().setGravity(Gravity.BOTTOM);
-//        WindowManager m = getWindow().getWindowManager();
-//        Display d = m.getDefaultDisplay();
-//        LayoutParams p = getWindow().getAttributes();
-//        p.width = d.getWidth();
-//        getWindow().setAttributes(p);
-
     }
 
 

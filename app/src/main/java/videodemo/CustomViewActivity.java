@@ -173,8 +173,8 @@ public   class CustomViewActivity extends Activity {
                     startActivity(new Intent(getApplicationContext(), RulerActivity.class));
                 }else if (text.equals("一个View,智慧，城市")){
                     startActivity(new Intent(getApplicationContext(), OneViewActivity.class));
-                }else if (text.equals("另一个View,智慧，城市")){
-                    startActivity(new Intent(getApplicationContext(), OtherOneViewActivity.class));
+                }else if (text.equals("联系人快速索引条")){
+                    startActivity(new Intent(getApplicationContext(), ContactsActivity.class));
                 }else if (text.equals("饼状图")){
                     startActivity(new Intent(getApplicationContext(), PieChartActivity.class));
                 }else if (text.equals("自定义开关togglebutton")){
@@ -183,6 +183,20 @@ public   class CustomViewActivity extends Activity {
                     startActivity(new Intent(getApplicationContext(), CustomCombinationsActivity.class));
                 }else if (text.equals("自定义组合进度条")){
                     startActivity(new Intent(getApplicationContext(), CustomCombinationsPRogressbarActivity.class));
+                }else if (text.equals("某控件中心画个圆")){
+                    startActivity(new Intent(getApplicationContext(), CencleCircleActivity.class));
+                }else if (text.equals("DrawTextTestView")){
+                    startActivity(new Intent(getApplicationContext(), DrawTextActivity.class));
+                }else if (text.equals("画布类操作，圆，矩形，弧等等")){
+                    startActivity(new Intent(getApplicationContext(), CanvasActivity.class));
+                }else if (text.equals("贝塞尔曲线")){
+                    startActivity(new Intent(getApplicationContext(), BesselPlotActivity.class));
+                }else if (text.equals("PieChartDemo")){
+                    startActivity(new Intent(getApplicationContext(), PieChartDemoActivity.class));
+                }else if (text.equals("Textview完整高变0")){
+                    startActivity(new Intent(getApplicationContext(), FullHeightChangeZeroLinesActivity.class));
+                }else if (text.equals("Textview完整高变7")){
+                    startActivity(new Intent(getApplicationContext(), FullHeightChangeSevenLinesActivity.class));
                 }
             }
         });
@@ -202,10 +216,18 @@ public   class CustomViewActivity extends Activity {
         list.add("poupwindow");
         list.add("尺子");
         list.add("一个View,智慧，城市");
+        list.add("联系人快速索引条");
         list.add("饼状图");
         list.add("自定义开关togglebutton");
         list.add("自定义组合控件");
         list.add("自定义组合进度条");
+        list.add("某控件中心画个圆");
+        list.add("DrawTextTestView");
+        list.add("画布类操作，圆，矩形，弧等等");
+        list.add("贝塞尔曲线");
+        list.add("PieChartDemo");
+        list.add("Textview完整高变0");
+        list.add("Textview完整高变7");
 
     }
 

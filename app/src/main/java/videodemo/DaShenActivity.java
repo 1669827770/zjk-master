@@ -30,8 +30,6 @@ import activity.eventbus.EventBusActivity;
 import activity.eventbus.eventBus2.tryeventbus2.FirstActivity;
 import activity.video.ChoosePhotosActivity;
 import activity.video.DownParallaxActivity;
-import dialog.AddrDialog2;
-import dialog.NoCancleDialog;
 import view.AddrToast;
 import view.FlowLayout;
 
@@ -337,30 +335,12 @@ public class DaShenActivity extends Activity {
                 }else if (text.equals("谷歌市场")){
                     startActivity(new Intent(getApplicationContext(), GoogleMarketActivity.class));
 
-                }else if (text.equals("无法取消的dialog")){
-                    //                //这里要是传getApplication,getApplicationContext都不能显示dialog
-               NoCancleDialog nocancleDialog = new NoCancleDialog(DaShenActivity.this,R.style.filletDialog);
-                nocancleDialog.setCancelable(false);
-                nocancleDialog.show();
-//              startActivity(new Intent(getApplicationContext(), TestActivity.class));
-
                 }else if (text.equals("windowManager")){
                     //这里要是传getApplication,getApplicationContext都不能显示dialog
                     AddrToast  at = new AddrToast(getApplicationContext());
                     at.show();
                     finish();
 //                    Toast.makeText(getApplication(), "4444444444444444444", Toast.LENGTH_SHORT).show();
-                }else if (text.equals("圆角矩形的dialog")){
-
-                    //这里要是传getApplication,getApplicationContext都不能显示dialog
-                AddrDialog2 addrDialog2 = new AddrDialog2(DaShenActivity.this);
-                addrDialog2.show();
-
-                }else if (text.equals("中间的圆角矩形的dialog")){
-                    //                //这里要是传getApplication,getApplicationContext都不能显示dialog
-                AddrDialog2 addrDialog2 = new AddrDialog2(DaShenActivity.this,R.style.filletDialog);
-                addrDialog2.show();
-
                 }else if (text.equals("首页倒计时")){
                     startActivity(new Intent(DaShenActivity.this, WelcomeActivity.class));
 
@@ -446,6 +426,9 @@ public class DaShenActivity extends Activity {
                 }else if (text.equals("新闻客户端")){
                     startActivity(new Intent(DaShenActivity.this, NewsActivity.class));
 
+                }else if (text.equals("dialog")){
+                    startActivity(new Intent(DaShenActivity.this, DialogGroupActivity.class));
+
                 }
 
 
@@ -464,10 +447,7 @@ public class DaShenActivity extends Activity {
         list.add("安卓动画");
         list.add("状态栏图标");
         list.add("谷歌市场");
-        list.add("无法取消的dialog");
         list.add("windowManager");
-        list.add("圆角矩形的dialog");
-        list.add("中间的圆角矩形的dialog");
         list.add("首页倒计时");
         list.add("载入动画进度条");
         list.add("手机视频");
@@ -491,6 +471,7 @@ public class DaShenActivity extends Activity {
         list.add("沉浸式状态栏");
         list.add("手机卫士");
         list.add("新闻客户端");
+        list.add("dialog");
     }
 
     /**

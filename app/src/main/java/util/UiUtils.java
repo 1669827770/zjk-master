@@ -18,7 +18,6 @@ import activity.AnimationActivity;
 import activity.GoogleMarketActivity;
 import activity.StatusbariconActivity;
 import activity.TestActivity;
-import dialog.AddrDialog2;
 import videodemo.CustomViewActivity;
 
 import static videodemo.MyApplication.mContext;
@@ -99,17 +98,6 @@ public class UiUtils {
 					mContext.startActivity(intent);
 
                 }else if (text.equals("windowManager")){
-					Intent intent = new Intent(mContext, StatusbariconActivity.class);
-					intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-					mContext.startActivity(intent);
-
-                }else if (text.equals("圆角矩形的dialog")){
-
-				//这里要是传getApplication,getApplicationContext都不能显示dialog
-                AddrDialog2 addrDialog2 = new AddrDialog2(mContext);
-                addrDialog2.show();
-
-                }else if (text.equals("中间的圆角矩形的dialog")){
 					Intent intent = new Intent(mContext, StatusbariconActivity.class);
 					intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 					mContext.startActivity(intent);

@@ -11,7 +11,7 @@
     </style>
 
 
-    <style name="AddrDialogStyle" parent="@android:style/Theme.Dialog">
+    <style name="AddrDialogStyleBottom" parent="@android:style/Theme.Dialog">
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowAnimationStyle">@style/StyleDialog</item>
         <item name="android:windowFrame">@null</item>
@@ -34,6 +34,82 @@
         <item name="android:windowEnterAnimation">@anim/style_dialog_enter</item>
         <item name="android:windowExitAnimation">@anim/style_dialog_exit</item>
     </style>
+
+
+    <style name="AddrDialogStyleTop" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowAnimationStyle">@style/StyleDialog2</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 背景是否透明 -->
+
+    </style>
+
+
+    <style name="StyleDialog2">
+        <item name="android:windowEnterAnimation">@anim/style_dialog_enter2</item>
+        <item name="android:windowExitAnimation">@anim/style_dialog_exit2</item>
+    </style>
+
+
+    <style name="AddrDialogStyleRight" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowAnimationStyle">@style/StyleDialog3</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 背景是否透明 -->
+
+    </style>
+
+
+    <style name="StyleDialog3">
+        <item name="android:windowEnterAnimation">@anim/style_dialog_enter3</item>
+        <item name="android:windowExitAnimation">@anim/style_dialog_exit3</item>
+    </style>
+
+
+    <style name="AddrDialogStyleLeft" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowAnimationStyle">@style/StyleDialog4</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 背景是否透明 -->
+
+    </style>
+
+
+    <style name="StyleDialog4">
+        <item name="android:windowEnterAnimation">@anim/style_dialog_enter3</item>
+        <item name="android:windowExitAnimation">@anim/style_dialog_exit3</item>
+    </style>
+
 
 
     <style name="filletDialog" parent="@android:style/Theme.Dialog">
