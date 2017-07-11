@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '25.0.0'
+    compileSdkVersion 26
+    buildToolsVersion '26.0.0'
     defaultConfig {
         applicationId "com.example.admin.todo123"
         minSdkVersion 15
@@ -58,4 +58,5 @@ dependencies {
     compile 'com.tencent.bugly:nativecrashreport:latest.release'
     //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
     compile files('src/main/libs/pinyin4j-2.5.0.jar')
+    compile 'com.android.support:design:26.0.0-alpha1'
 }

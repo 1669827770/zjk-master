@@ -42,6 +42,7 @@ import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
 import static android.content.Context.CONNECTIVITY_SERVICE;
+import static videodemo.MyApplication.mContext;
 
 public class Utils {
 
@@ -117,6 +118,15 @@ public class Utils {
      */
     public static int getScreenHeight(Context context) {
         return context.getResources().getDisplayMetrics().heightPixels;
+    }
+
+    /**
+     *
+     * @param
+     * @return
+     */
+    public static Context getContext() {
+        return mContext;
     }
 
     /**

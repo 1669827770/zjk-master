@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="videodemo">
 
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 <!--bugly-->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -22,6 +23,190 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".DaShenActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name="activity.MoveImageviewActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name="activity.MoveViewActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name="activity.WeigetMoveActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name="activity.WelcomeActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name="activity.RulerActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name="activity.ViewpagerActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name="activity.GlideActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name="activity.RecycleViewActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="activity.video.ChoosePhotosActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name="activity.SViewOrRviewBattleActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name="activity.video.DownParallaxActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="activity.LoopViewpagerActivity"
+            >
+
+        </activity>
+        <activity
+            android:name="activity.PulltorefreshListViewActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name="activity.PoupwindowActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name="activity.eventbus.EventBusActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name="activity.eventbus.SecondEventBusActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name="activity.eventbus.eventBus2.tryeventbus2.FirstActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name="activity.eventbus.eventBus2.tryeventbus2.SecondActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name="activity.TransparencyToolbarActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".CustomViewActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name="activity.CustomTitleActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+
+        <activity android:name="activity.FocussActivity">
+
+        </activity>
+
+        <activity android:name="activity.MobleSalfActivity">
+
+        </activity>
+
+        <activity android:name="activity.StatusbariconActivity">
+
+        </activity>
+
+        <activity android:name="activity.GoogleMarketActivity">
+
+        </activity>
+
+        <activity android:name=".NewsActivity">
+
+        </activity>
+
+        <activity android:name="activity.WelcomeAnimActivity">
+
+        </activity>
+
+        <activity android:name=".MainInterfaceActivity">
+
+        </activity>
+
+        <activity android:name="activity.TestActivity">
+
+        </activity>
+        <activity android:name="activity.AnimationActivity">
+
+        </activity>
+        <activity android:name="activity.CustomCombinationsActivity">
+
+        </activity>
+        <activity android:name="activity.CustomCombinationsPRogressbarActivity">
+
+        </activity>
+        <activity android:name="activity.OneViewActivity">
+
+        </activity>
+        <activity android:name="activity.HelpExpandadleListActivity">
+
+        </activity>
+        <activity android:name="activity.PropertyAnimationActivity">
+
+        </activity>
+        <activity android:name="activity.IPCActivity">
+
+        </activity>
+
+        <activity android:name=".DialogGroupActivity">
+
+        </activity>
+        <activity android:name=".CanvasActivity">
+
+        </activity>
+
+        <activity android:name=".FullHeightChangeSevenLinesActivity">
+
+        </activity>
+        <activity android:name=".FullHeightChangeZeroLinesActivity">
+
+        </activity>
+
+        <activity android:name=".PieChartDemoActivity">
+
+        </activity>
+
+       <activity android:name=".DrawTextActivity">
+
+       </activity>
+
+
+
 
 
 

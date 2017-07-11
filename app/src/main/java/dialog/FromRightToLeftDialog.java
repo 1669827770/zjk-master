@@ -32,7 +32,8 @@ public class FromRightToLeftDialog extends Dialog {
 
         super(context, R.style.AddrDialogStyleRight);
 
-        getWindow().setGravity(Gravity.LEFT);
+        getWindow().setGravity(Gravity.CENTER_HORIZONTAL);
+
         WindowManager m = getWindow().getWindowManager();
         Display d = m.getDefaultDisplay();
         LayoutParams p = getWindow().getAttributes();

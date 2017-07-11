@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.widget.Button;
-import util.ActivityManager;
+import util.ActivityManagerUtil;
 import videodemo.R;
 
 /**
@@ -39,7 +39,7 @@ public class ChoosePhotosActivity extends FragmentActivity implements View.OnCli
         initViews();
         // 第一次启动时选中第0个tab
         setTabSelection(0);
-        ActivityManager.addActivity(ChoosePhotosActivity.this,"ChoosePhotosActivity");
+        ActivityManagerUtil.addActivity(ChoosePhotosActivity.this,"ChoosePhotosActivity");
     }
 
 
