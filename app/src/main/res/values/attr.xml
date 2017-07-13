@@ -11,6 +11,8 @@
         <attr name="titleTextSize" />
     </declare-styleable>
 
+
+
     <declare-styleable name="SettingItemView">
 
         <attr name="sivBackground" >
@@ -29,6 +31,23 @@
         <attr name="backgrounicon" format="reference" />
         <attr name="icon" format="reference" />
         <attr name="openstate" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressBarView">
+
+        <attr name="circleBgStrokeWidth" format="dimension" />
+        <attr name="progressStrokeWidth" format="dimension" />
+
+        <attr name="circleBgColor" format="color" />
+        <attr name="progressColor" format="color" />
+
+        <attr name="circleAnimationDuration" format="integer" />
+
+        <attr name="isDrawCenterProgressText" format="boolean" />
+
+        <attr name="centerProgressTextColor" format="color"/>
+        <attr name="centerProgressTextSize" format="dimension"/>
+
     </declare-styleable>
 
 </resources>

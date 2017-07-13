@@ -16,20 +16,21 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Random;
 
-import activity.AnimationActivity;
-import activity.GlideActivity;
-import activity.GoogleMarketActivity;
-import activity.IPCActivity;
-import activity.MobleSalfActivity;
-import activity.RecycleViewActivity;
-import activity.SViewOrRviewBattleActivity;
-import activity.StatusbariconActivity;
-import activity.TransparencyToolbarActivity;
-import activity.WelcomeActivity;
-import activity.eventbus.EventBusActivity;
-import activity.eventbus.eventBus2.tryeventbus2.FirstActivity;
-import activity.video.ChoosePhotosActivity;
-import activity.video.DownParallaxActivity;
+import activity.VideoAudioActivity;
+import ui.activity.AnimationActivity;
+import ui.activity.GlideActivity;
+import ui.activity.GoogleMarketActivity;
+import ui.activity.IPCActivity;
+import ui.activity.MobleSalfActivity;
+import ui.activity.RecycleViewActivity;
+import ui.activity.SViewOrRviewBattleActivity;
+import ui.activity.StartAndMainInterfaceActivity;
+import ui.activity.StatusbariconActivity;
+import ui.activity.TransparencyToolbarActivity;
+import ui.activity.WelcomeActivity;
+import ui.activity.eventbus.EventBusActivity;
+import ui.activity.eventbus.eventBus2.tryeventbus2.FirstActivity;
+import ui.activity.video.DownParallaxActivity;
 import view.AddrToast;
 import view.FlowLayout;
 
@@ -287,14 +288,6 @@ public class DaShenActivity extends Activity {
 //            }
 //        });
 //
-//        findViewById(R.id.btn_news).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(DaShenActivity.this, NewsActivity.class));
-//
-//            }
-//        });
-
     }
 
 
@@ -349,13 +342,11 @@ public class DaShenActivity extends Activity {
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     mContext.startActivity(intent);
 
-                }else if (text.equals("手机视频")){
-                    startActivity(new Intent(DaShenActivity.this, ChoosePhotosActivity.class));
+                }else if (text.equals("视频音频")){
+                    startActivity(new Intent(DaShenActivity.this, VideoAudioActivity.class));
 
-                }else if (text.equals("高度可变的textview")){
-                    Intent intent = new Intent(mContext, StatusbariconActivity.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    mContext.startActivity(intent);
+                }else if (text.equals("启动界面与主界面")){
+                    startActivity(new Intent(DaShenActivity.this, StartAndMainInterfaceActivity.class));
 
                 }else if (text.equals("recycleview使用")){
                     startActivity(new Intent(DaShenActivity.this, RecycleViewActivity.class));
@@ -385,9 +376,6 @@ public class DaShenActivity extends Activity {
 
                 }else if (text.equals("2种观察者模式的使用")){
                     startActivity(new Intent(DaShenActivity.this,DownParallaxActivity.class));
-                }else if (text.equals("下拉视差动画")){
-                    startActivity(new Intent(DaShenActivity.this,DownParallaxActivity.class));
-
                 }else if (text.equals("6.0权限")){
                     Intent intent = new Intent(mContext, StatusbariconActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -423,9 +411,6 @@ public class DaShenActivity extends Activity {
                 }else if (text.equals("手机卫士")){
                     startActivity(new Intent(DaShenActivity.this, MobleSalfActivity.class));
 
-                }else if (text.equals("新闻客户端")){
-                    startActivity(new Intent(DaShenActivity.this, NewsActivity.class));
-
                 }else if (text.equals("dialog")){
                     startActivity(new Intent(DaShenActivity.this, DialogGroupActivity.class));
 
@@ -450,8 +435,8 @@ public class DaShenActivity extends Activity {
         list.add("windowManager");
         list.add("首页倒计时");
         list.add("载入动画进度条");
-        list.add("手机视频");
-        list.add("高度可变的textview");
+        list.add("视频音频");
+        list.add("启动界面与主界面");
         list.add("recycleview使用");
         list.add("高度可变的recycleview");
         list.add("图片问题，包括压缩，上传之类");
@@ -460,7 +445,6 @@ public class DaShenActivity extends Activity {
         list.add("Scroview与Recycleviwew没有惯性问题");
         list.add("swiperefreshlayout的简单使用");
         list.add("2种观察者模式的使用");
-        list.add("下拉视差动画");
         list.add("6.0权限");
         list.add("7.0权限");
         list.add("EventBus");
@@ -470,7 +454,6 @@ public class DaShenActivity extends Activity {
         list.add("APP顶部的toolbar位置的滑动透明变化");
         list.add("沉浸式状态栏");
         list.add("手机卫士");
-        list.add("新闻客户端");
         list.add("dialog");
     }
 

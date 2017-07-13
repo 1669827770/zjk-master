@@ -77,6 +77,13 @@ public class StepArcView extends View {
         /**指定圆弧的外轮廓矩形区域*/
         RectF rectF = new RectF(0 + borderWidth, borderWidth, 2 * centerX - borderWidth, 2 * centerX - borderWidth);
 
+//        android:layout_gravity="center"   原来布局文件中有这个，这样就在中间，但是不方便理解上面的代码RectF rectF
+//        android:layout_centerHorizontal="true"
+        Paint paint = new Paint();  //这个是绘制后面的矩形，方便理解
+        paint.setColor(getResources().getColor(R.color.bg_deep_blue));
+        canvas.drawRect(rectF,paint);
+
+
         /**【第一步】绘制整体的黄色圆弧*/
         drawArcYellow(canvas, rectF);
         /**【第二步】绘制当前进度的红色圆弧*/

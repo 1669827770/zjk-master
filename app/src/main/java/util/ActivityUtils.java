@@ -243,7 +243,7 @@ public final class ActivityUtils {
                 Field pausedField = activityRecordClass.getDeclaredField("paused");
                 pausedField.setAccessible(true);
                 if (!pausedField.getBoolean(activityRecord)) {
-                    Field activityField = activityRecordClass.getDeclaredField("activity");
+                    Field activityField = activityRecordClass.getDeclaredField("ui/activity");
                     activityField.setAccessible(true);
                     return (Activity) activityField.get(activityRecord);
                 }

@@ -14,10 +14,10 @@ import android.widget.Toast;
 
 import java.util.Random;
 
-import activity.AnimationActivity;
-import activity.GoogleMarketActivity;
-import activity.StatusbariconActivity;
-import activity.TestActivity;
+import ui.activity.AnimationActivity;
+import ui.activity.GoogleMarketActivity;
+import ui.activity.StatusbariconActivity;
+import ui.activity.TestActivity;
 import videodemo.CustomViewActivity;
 
 import static videodemo.MyApplication.mContext;

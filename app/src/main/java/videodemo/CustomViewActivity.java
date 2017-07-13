@@ -17,19 +17,22 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Random;
 
-import activity.CustomCombinationsActivity;
-import activity.CustomCombinationsPRogressbarActivity;
-import activity.CustomTitleActivity;
-import activity.LoopViewpagerActivity;
-import activity.MoveImageviewActivity;
-import activity.MoveViewActivity;
-import activity.OneViewActivity;
-import activity.PieChartActivity;
-import activity.PoupwindowActivity;
-import activity.PulltorefreshListViewActivity;
-import activity.RulerActivity;
-import activity.ViewpagerActivity;
-import activity.WeigetMoveActivity;
+import ui.activity.ContactsActivity;
+import ui.activity.CustomCombinationsActivity;
+import ui.activity.CustomCombinationsPRogressbarActivity;
+import ui.activity.CustomTitleActivity;
+import ui.activity.FullHeightChangeSevenLinesActivity;
+import ui.activity.FullHeightChangeZeroLinesActivity;
+import ui.activity.LoopViewpagerActivity;
+import ui.activity.MoveImageviewActivity;
+import ui.activity.MoveViewActivity;
+import ui.activity.OneViewActivity;
+import ui.activity.PieChartActivity;
+import ui.activity.PoupwindowActivity;
+import ui.activity.PulltorefreshListViewActivity;
+import ui.activity.RulerActivity;
+import ui.activity.ViewpagerActivity;
+import ui.activity.WeigetMoveActivity;
 import view.FlowLayout;
 
 /**

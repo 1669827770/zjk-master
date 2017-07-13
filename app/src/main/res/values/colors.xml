@@ -18,4 +18,8 @@
     <color name="color_two">#FCD2A1</color>
     <color name="color_three">#EF8273</color>
 
+
+    <color name="green">#31C27C</color>
+    <color name="half_white">#66ffffff</color>
+
 </resources>
