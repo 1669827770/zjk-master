@@ -32,6 +32,7 @@ import ui.activity.PoupwindowActivity;
 import ui.activity.PulltorefreshListViewActivity;
 import ui.activity.RulerActivity;
 import ui.activity.ViewpagerActivity;
+import ui.activity.WaveByBezierActivity;
 import ui.activity.WeigetMoveActivity;
 import view.FlowLayout;
 
@@ -200,7 +201,11 @@ public   class CustomViewActivity extends Activity {
                     startActivity(new Intent(getApplicationContext(), FullHeightChangeZeroLinesActivity.class));
                 }else if (text.equals("Textview完整高变7")){
                     startActivity(new Intent(getApplicationContext(), FullHeightChangeSevenLinesActivity.class));
+                }else if (text.equals("贝塞尔曲线实现水波纹效果")){
+                    startActivity(new Intent(getApplicationContext(), WaveByBezierActivity.class));
                 }
+
+
             }
         });
         return textView;
@@ -231,6 +236,7 @@ public   class CustomViewActivity extends Activity {
         list.add("PieChartDemo");
         list.add("Textview完整高变0");
         list.add("Textview完整高变7");
+        list.add("贝塞尔曲线实现水波纹效果");
 
     }
 

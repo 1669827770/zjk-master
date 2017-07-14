@@ -119,6 +119,7 @@ public class CircleProgressBarView extends View {
         getAttr(attrs);
         initPaint();
         initTextPaint();
+        initAnimation();
     }
 
     private void getAttr(AttributeSet attrs) {
@@ -210,7 +211,7 @@ public class CircleProgressBarView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         canvas.drawCircle(centerX, centerY, radius, circleBgPaint);
-        canvas.drawArc(rectF, 90, currentProgress, false, progressPaint);
+        canvas.drawArc(rectF, 90, currentProgress, false, progressPaint);  //90就是绘制的起始角度
         if (isDrawCenterProgressText) {
             drawCenterProgressText(canvas, (int) mProgress + "%");
         }

@@ -16,10 +16,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Random;
 
-import activity.VideoAudioActivity;
+import ui.activity.MaterialDesignActivity;
+import ui.activity.VideoAudioActivity;
 import ui.activity.AnimationActivity;
 import ui.activity.GlideActivity;
-import ui.activity.GoogleMarketActivity;
 import ui.activity.IPCActivity;
 import ui.activity.MobleSalfActivity;
 import ui.activity.RecycleViewActivity;
@@ -325,8 +325,8 @@ public class DaShenActivity extends Activity {
                 }else if (text.equals("状态栏图标")){
                     startActivity(new Intent(getApplicationContext(), StatusbariconActivity.class));
 
-                }else if (text.equals("谷歌市场")){
-                    startActivity(new Intent(getApplicationContext(), GoogleMarketActivity.class));
+                }else if (text.equals("Material design")){
+                    startActivity(new Intent(getApplicationContext(), MaterialDesignActivity.class));
 
                 }else if (text.equals("windowManager")){
                     //这里要是传getApplication,getApplicationContext都不能显示dialog
@@ -402,9 +402,6 @@ public class DaShenActivity extends Activity {
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     mContext.startActivity(intent);
 
-                }else if (text.equals("APP顶部的toolbar位置的滑动透明变化")){
-                    startActivity(new Intent(DaShenActivity.this, TransparencyToolbarActivity.class));
-
                 }else if (text.equals("沉浸式状态栏")){
                     startActivity(new Intent(DaShenActivity.this, TransparencyToolbarActivity.class));
 
@@ -431,7 +428,7 @@ public class DaShenActivity extends Activity {
         list.add("自定义控件");
         list.add("安卓动画");
         list.add("状态栏图标");
-        list.add("谷歌市场");
+        list.add("Material design");
         list.add("windowManager");
         list.add("首页倒计时");
         list.add("载入动画进度条");
@@ -451,7 +448,6 @@ public class DaShenActivity extends Activity {
         list.add("EventBus2");
         list.add("MVP");
         list.add("RXjava");
-        list.add("APP顶部的toolbar位置的滑动透明变化");
         list.add("沉浸式状态栏");
         list.add("手机卫士");
         list.add("dialog");
