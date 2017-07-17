@@ -33,7 +33,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".DaShenActivity"
+        <activity android:name="ui.activity.DaShenActivity"
             android:screenOrientation="portrait">
 
         </activity>
@@ -121,7 +121,7 @@
 
         </activity>
 
-        <activity android:name=".CustomViewActivity"
+        <activity android:name="ui.activity.CustomViewActivity"
             android:screenOrientation="portrait">
 
         </activity>
@@ -177,10 +177,10 @@
 
         </activity>
 
-        <activity android:name=".DialogGroupActivity">
+        <activity android:name="ui.activity.DialogGroupActivity">
 
         </activity>
-        <activity android:name=".CanvasActivity">
+        <activity android:name="ui.activity.CanvasActivity">
 
         </activity>
 
@@ -191,24 +191,24 @@
 
         </activity>
 
-        <activity android:name=".PieChartDemoActivity">
+        <activity android:name="ui.activity.PieChartDemoActivity">
 
         </activity>
 
-       <activity android:name=".DrawTextActivity">
+       <activity android:name="ui.activity.DrawTextActivity">
 
        </activity>
         <activity android:name="ui.activity.StartAndMainInterfaceActivity">
 
         </activity>
-        <activity android:name=".CencleCircleActivity">
+        <activity android:name="ui.activity.CencleCircleActivity">
 
         </activity>
 
         <activity android:name="ui.activity.ContactsActivity">
 
         </activity>
-        <activity android:name=".BesselPlotActivity">
+        <activity android:name="ui.activity.BesselPlotActivity">
 
         </activity>
         <activity android:name="ui.activity.phoneplayer.SplashActivityPhone">
@@ -240,6 +240,15 @@
         </activity>
 
         <activity android:name="ui.activity.MaterialDesignActivity">
+
+        </activity>
+        <activity android:name="ui.activity.SlideUpwardIntoTitlebarActivity">
+
+        </activity>
+        <activity android:name="ui.activity.PictureActivity">
+
+        </activity>
+        <activity android:name="ui.activity.PictureZoomActivity">
 
         </activity>
 
