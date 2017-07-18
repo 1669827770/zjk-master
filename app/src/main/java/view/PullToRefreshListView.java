@@ -137,15 +137,18 @@ public class PullToRefreshListView extends ListView implements OnScrollListener{
 			if (distance > 0 && getFirstVisiblePosition() == 0) {
 				// 获取显示空白区域，让listview能够展示空白区域
 				int paddingtop = distance - headermeasuredHeight;
+				if(paddingtop>headermeasuredHeight){
+					paddingtop=headermeasuredHeight;
+				}
 				// 显示刷新头
 				headerview.setPadding(0, paddingtop, 0, 0);
 
-				// 下拉刷新 -> 松开刷新
+				// 下拉距离超过头布局，也就是是头布局完全展示出来，显示松开刷新
 				if (paddingtop > 0 && CURRENTSTATE == PULL_DOWN) {
 					CURRENTSTATE = RELEASE_REFRESH;
 					switchSate();
 				}
-				// 松开刷新 -> 下拉刷新
+				// 下拉距离没有超过头布局，也就是是头布局没有完全展示出来就，显示下拉刷新
 				if (paddingtop < 0 && CURRENTSTATE == RELEASE_REFRESH) {
 					CURRENTSTATE = PULL_DOWN;
 					switchSate();
