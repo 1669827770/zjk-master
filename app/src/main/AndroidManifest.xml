@@ -269,6 +269,9 @@
         <activity android:name="ui.activity.VideoClippingActivity">
 
         </activity>
+        <activity android:name="ui.activity.VideoTrimActivity">
+
+        </activity>
 
 
 
