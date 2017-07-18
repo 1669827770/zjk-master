@@ -251,11 +251,22 @@
         <activity android:name="ui.activity.PictureZoomActivity">
 
         </activity>
-
         <activity android:name="ui.activity.ListviewMultipleEntriesActivity">
 
         </activity>
         <activity android:name="ui.activity.RecycleviewMultipleEntriesActivity">
+
+        </activity>
+        <activity android:name="ui.activity.ZoomLoadingLargePictureActivity">
+
+        </activity>
+        <activity android:name="ui.activity.TearClothesActivity">
+
+        </activity>
+        <activity android:name="ui.activity.ScanPicturesOnSDcardActivity">
+
+        </activity>
+        <activity android:name="ui.activity.VideoClippingActivity">
 
         </activity>
 
