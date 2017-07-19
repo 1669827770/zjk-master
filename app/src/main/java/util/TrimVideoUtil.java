@@ -8,6 +8,7 @@ import android.media.MediaMetadataRetriever;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.text.TextUtils;
+import android.util.Log;
 
 import java.util.ArrayList;
 
@@ -23,11 +24,11 @@ public class TrimVideoUtil {
 
     /**
      * UnitConverter.dpToPxx(20),这个20左右连个手柄距离两边屏幕的距离和，也就是各自是10
-     * thumb_Width，表示每一秒应该展示的宽度
+     * thumb_Width，表示每一秒应该展示的宽度（一秒取一个图片，一个图片对应的宽度）
      */
     private static final float thumb_Width = (DeviceUtil.getDeviceWidth() - UnitConverter.dpToPxx(20)) / VIDEO_MAX_DURATION;
     private static final int thumb_Height = UnitConverter.dpToPx(60);
-    private static long one_frame_time = 1000000;//隔多长时间取一帧
+    private static long one_frame_time = 1000000;//隔多长时间取一帧     一秒取一帧
 
 //    public void setMaxDuration(int i){
 //        this.VIDEO_MAX_DURATION=i;
@@ -168,62 +169,40 @@ public class TrimVideoUtil {
 
                            // Retrieve media data use microsecond检索媒体数据使用微秒    这个时间是取帧的的总时长
                            long videoLengthInMs = Long.parseLong(mediaMetadataRetriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION)) * 1000;
+                           Log.d("00000000000000000000001", "[" + videoLengthInMs + "]");
 
-                           if(j==2){   //如果是从视频封面进来的话走这个if里面就够了
-                               long one_frame_time2 = videoLengthInMs / 10;  //隔多长时间取一帧
-                             //一共显示10张，总时间除以10，得到每隔多长时间选一帧，放到集合中
-                               for (int i = 0; i < 10; i++) {
-
-                                   Bitmap bitmap = mediaMetadataRetriever.getFrameAtTime(i * one_frame_time2, MediaMetadataRetriever.OPTION_CLOSEST_SYNC);
-                                   //将截屏保存在list集合中
-                                   thumbnailList.add(bitmap);
-                                   if(thumbnailList.size() == 1) {
-                                       callback.onSingleCallback((ArrayList<Bitmap>)thumbnailList.clone(), (int) one_frame_time2);
-                                       thumbnailList.clear();
-                                   }
-                               }
-                               if(thumbnailList.size() > 0) {
-                                   callback.onSingleCallback((ArrayList<Bitmap>) thumbnailList.clone(), (int) one_frame_time2);
-                                   thumbnailList.clear();
-                               }
-
-                           }else{
-
-
-                           //如果视频时长小于一帧就是1，大于的话。。。。
+                           //如果视频时长小于一帧就是1一帧，大于的话就取numThumbs帧
                            long  numThumbs = videoLengthInMs < one_frame_time? 1 : (videoLengthInMs / one_frame_time);
                            //interval间隔的意思
-                           final long interval = videoLengthInMs / numThumbs;
+//                           final long interval = videoLengthInMs / numThumbs;
 
                            //每次截取到1帧之后上报（每次1帧绘制一次）（原来是三帧）
                            for (long i = 0; i < numThumbs; ++i) {
-                               Bitmap bitmap = mediaMetadataRetriever.getFrameAtTime(i * interval, MediaMetadataRetriever.OPTION_CLOSEST_SYNC);
+                               Bitmap bitmap = mediaMetadataRetriever.getFrameAtTime(i * one_frame_time, MediaMetadataRetriever.OPTION_CLOSEST_SYNC);
 
-                               try {
-                                   //每一帧宽度thumb_Width是屏幕的宽度除以总时长
-                                   if(j==1){    //解决视频封面不清晰问题
-
+//                               try {
+//                                   //每一帧宽度thumb_Width是屏幕的宽度除以总时长
+//                                   if(j==1){    //解决视频封面不清晰问题
                                        bitmap = Bitmap.createScaledBitmap(bitmap,(int) thumb_Width, thumb_Height, true);
-
-
-                                   }
-//
-                               } catch (Exception e) {
-                                   e.printStackTrace();
-                               }
+//                                   }
+////
+//                               } catch (Exception e) {
+//                                   e.printStackTrace();
+//                               }
                                //将截屏保存在list集合中
                                thumbnailList.add(bitmap);
                                 if(thumbnailList.size() == 1) {
-                                    callback.onSingleCallback((ArrayList<Bitmap>)thumbnailList.clone(), (int) interval);
+                                    //第二个参数one_frame_time是随便写的，没什么用，因为复制过来的工具类就有这个参数，所以就加上了
+                                    callback.onSingleCallback((ArrayList<Bitmap>)thumbnailList.clone(), (int) one_frame_time);
                                     thumbnailList.clear();
                                 }
                            }
                            if(thumbnailList.size() > 0) {
-                               callback.onSingleCallback((ArrayList<Bitmap>) thumbnailList.clone(), (int) interval);
+                               callback.onSingleCallback((ArrayList<Bitmap>) thumbnailList.clone(), (int) one_frame_time);
                                thumbnailList.clear();
                            }
                            mediaMetadataRetriever.release();
-                           }
+
                        } catch (final Throwable e) {
                            Thread.getDefaultUncaughtExceptionHandler().uncaughtException(Thread.currentThread(), e);
                        }

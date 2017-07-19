@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
     package="videodemo">
 
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
@@ -14,6 +15,9 @@
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.intent.action.ACTION_REQUEST_SHUTDOWN" />
+
+
 
     <application
         android:name=".MyApplication"
@@ -270,6 +274,21 @@
 
         </activity>
         <activity android:name="ui.activity.VideoTrimActivity">
+
+        </activity>
+        <activity android:name="ui.activity.VideoAudioActivity">
+
+        </activity>
+
+        <activity android:name="ui.activity.UpdataRestarActivity">
+
+        </activity>
+        <activity android:name="ui.activity.MobilePlayerActivity">
+
+        </activity>
+        <activity android:name="ui.activity.VideoPlayerActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
 
         </activity>
 

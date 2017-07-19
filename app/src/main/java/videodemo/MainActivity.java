@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import ui.activity.DaShenActivity;
+import ui.activity.UpdataRestarActivity;
 
 
 /**
@@ -31,6 +32,15 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        }
 
+
+        findViewById(R.id.btn_shutdown).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(getApplicationContext(), UpdataRestarActivity.class));
+
+            }
+        });
 
         findViewById(R.id.button4).setOnLongClickListener(new View.OnLongClickListener() {
             @Override
