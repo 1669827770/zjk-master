@@ -291,19 +291,33 @@
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
 
         </activity>
+        <activity android:name="ui.activity.LessCommonlyUsedViewActivity">
 
+        </activity>
+        <activity android:name="ui.activity.DatePickerDialogActivity">
 
+        </activity>
+        <activity android:name="ui.activity.MobileVirusScanningActivity">
 
+        </activity>
+        <activity android:name="ui.activity.ThirdPartySDKActivity">
 
+        </activity>
+        <activity android:name="ui.activity.LoginKeyboardScalingActivity">
 
+        </activity>
+        <activity android:name="ui.activity.LoginKeyboardScalingActivity2">
 
+        </activity>
+        <activity android:name="ui.activity.TimerActivity">
 
+        </activity>
+        <activity android:name="ui.activity.AudioListActivity">
 
-
-
-
-
-
+        </activity>
+        <activity android:name="ui.activity.AudioPlayerActivity">
+            
+        </activity>
 
     </application>
 
