@@ -141,16 +141,16 @@ public class CustomTitleView extends View
 		int specSize = MeasureSpec.getSize(widthMeasureSpec);
 		switch (specMode)
 		{
-		case MeasureSpec.EXACTLY:// ��ȷָ����
+		case MeasureSpec.EXACTLY://明确指定了
 			width = getPaddingLeft() + getPaddingRight() + specSize;
 			break;
-		case MeasureSpec.AT_MOST:// һ��ΪWARP_CONTENT
+		case MeasureSpec.AT_MOST:// 一般为WARP_CONTENT
 			width = getPaddingLeft() + getPaddingRight() + mBound.width();
 			break;
 		}
 
 		/**
-		 * ���ø߶�
+		 *设置高度
 		 */
 		specMode = MeasureSpec.getMode(heightMeasureSpec);
 		specSize = MeasureSpec.getSize(heightMeasureSpec);

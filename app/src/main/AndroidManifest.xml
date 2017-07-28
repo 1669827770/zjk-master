@@ -318,6 +318,13 @@
         <activity android:name="ui.activity.AudioPlayerActivity">
             
         </activity>
+        <activity android:name="ui.activity.RecycleviewSideslipRemovalActivity">
+
+        </activity>
+        <activity android:name="ui.activity.MeiZuApplicationsBannerViewActivity">
+
+        </activity>
+
 
     </application>
 
