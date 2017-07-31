@@ -90,7 +90,6 @@ public class PieView extends View {
             canvas.translate(-mWidth / 2, -mHeight / 2);
             RectF colorRect = new RectF(mCurrentPoint.x, mCurrentPoint.y, mCurrentPoint.x + mColorRectSideLength, mCurrentPoint.y + mColorRectSideLength);
 
-
             canvas.restore();
         }
 

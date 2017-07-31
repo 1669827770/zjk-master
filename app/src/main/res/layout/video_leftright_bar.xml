@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+  >
+
+        <!--这里的图片设计有问题，每个图片下面都有一差不多一个像素透明的像素，
+        导致覆盖recycleview不完整,所以高度调整为61-->
+        <ImageView
+            android:id="@+id/iv_leftbar"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:background="@drawable/video_trim_left"
+            />
+
+        <ImageView
+            android:id="@+id/iv_rightbar"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/video_trim_right"
+            />
+
+</RelativeLayout>

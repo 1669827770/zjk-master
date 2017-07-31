@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<view.ZoomImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="matrix"
+    android:src="@drawable/ic_launcher" />
+
+    <!--android:scaleType="matrix"这个属性就是配置缩放平移-->
+
+</RelativeLayout>

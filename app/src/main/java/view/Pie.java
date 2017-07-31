@@ -125,7 +125,7 @@ public class Pie extends View {
 			}
 			canvas.drawPath(path, paint);
 
-			//绘制直线
+			//绘制直线(就是黑线)
 			//Math.toRadians(参数):指的是将参数的弧度转换为角度
 			float startX = (float) (radius * Math.cos(Math.toRadians(startAngle + sweepAngle / 2)));
 			float startY = (float) (radius * Math.sin(Math.toRadians(startAngle + sweepAngle / 2)));

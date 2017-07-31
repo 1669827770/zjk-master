@@ -20,7 +20,7 @@ public class MoveImageView extends ImageView {
     } 
  
     public void setLocation(int x, int y) { 
-        this.setFrame(x, y - this.getHeight(), x + this.getWidth(), y); 
+        this.setFrame(x, y - this.getHeight(), x + this.getWidth(), y);    //这是移动主要方法
     } 
  
     // 移动 

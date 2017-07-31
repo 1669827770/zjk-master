@@ -31,7 +31,7 @@ public class ParallaxEffect extends ListView {
     private ImageView header_image;
     public void setHeaderImage(ImageView header_image) {
         this.header_image = header_image;
- //获取图片的额本质高度 ，即右键--》属性--》详细信息  查看到的图片信息 (这个是为了限制newHeight的高度)
+        //获取图片的额本质高度 ，即右键--》属性--》详细信息  查看到的图片信息 (这个是为了限制newHeight的高度)
         this.originalHeight = header_image.getDrawable().getIntrinsicHeight();
         //获取ImageView的高度  这两个方法是获取不到图片的高度的，因为这个setHeaderImage是在mainActivity的oncreat方法是执行的，虽然没有加载完，但是我们已经布局完了，那么我们就可以拿到他的布局参数
 //        int height = header_image.getHeight();
