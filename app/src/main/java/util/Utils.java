@@ -42,7 +42,7 @@ import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
 import static android.content.Context.CONNECTIVITY_SERVICE;
-import static videodemo.MyApplication.mContext;
+import static base.MyApplication.mContext;
 
 public class Utils {
 

@@ -7,7 +7,7 @@ import android.content.pm.PackageManager;
 import java.util.List;
 
 
-import static videodemo.MyApplication.mContext;
+import static base.MyApplication.mContext;
 
 /**
  * Author：J.Chou

@@ -2,7 +2,7 @@ package util;
 
 import android.util.DisplayMetrics;
 
-import static videodemo.MyApplication.mContext;
+import static base.MyApplication.mContext;
 
 /**
  * Created by choujason on 7/31/16.

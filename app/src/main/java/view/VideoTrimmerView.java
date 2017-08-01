@@ -30,7 +30,7 @@ import util.TrimVideoUtil;
 import util.UiThreadExecutor;
 import videodemo.R;
 
-import static videodemo.MyApplication.mContext;
+import static base.MyApplication.mContext;
 
 public class VideoTrimmerView extends FrameLayout {
 
